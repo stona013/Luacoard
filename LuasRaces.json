@@ -1,0 +1,375 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "LuasRaces",
+				"abbreviation": "LUA",
+				"full": "LuasRaces",
+				"authors": [
+					"krzysztof"
+				],
+				"convertedBy": [
+					"krzysztof"
+				],
+				"version": "1.0",
+				"url": "",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1643423127,
+		"dateLastModified": 1663792415
+	},
+	"race": [
+		{
+			"name": "Aviala",
+			"source": "LuasRaces",
+			"page": 0,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 1,
+						"amount": 2
+					}
+				},
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 1,
+						"amount": 1
+					}
+				}
+			],
+			"size": [
+				"M"
+			],
+			"creatureTypes": [
+				"humanoid"
+		
+			],
+			"speed": 30,
+			"darkvision": 0,
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"Aviala": true,
+					"any": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Die meisten Arten der Aviala erreichen um die 70 - 80 Jahre"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Alignment",
+					"entries": [
+						"Die Aviala sind so wandlungsreich wie der Wind. Sie tendieren dazu eher Chaotisch zu sein, aber haben meist nur Gutes im Sinne."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Sowohl männliche als auch weibliche Aviala überschreiten nur selten die 1,60m Grenze. Raubvogelartige sind eine Ausnahme."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Flügel der Aviala",
+					"entries": [
+						"Du kannst eine Aktion dazu aufwenden um deine Sprungweite um das x3 zu vergrößern und gleichzeitig deine Fallgeschwindigkeit zu Mindern. Zudem darfst du alle deine Sprung-Proben mit Geschicklichkeit statt Stärke machen. Wenn du willst."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Aviala Training",
+					"entries": [
+						"Du bist geübt in 2 Fähigkeiten nach Wahl: Akrobatic, deception, stealth, slight of hand"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sprache der Vogelartigen",
+					"entries": [
+						"Durch die Tatsache, dass du einen Schnabel besitzt, hast du die Fähigkeit dich mit Vögeln zu unterhalten. Jedoch nur mit jenen die der Größenkategorie “Small” zugeordnet sind."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"Aviala beherrschen Common (Allgemeine Sprache für alle Völker) und die der Aviala (Die Sprache der Vogelvölker), dazu kannst du dir noch eine Sprache aussuchen."
+					]
+				}
+			],
+			"age": {
+				"mature": 15,
+				"max": 80
+			}
+		},
+
+		{
+			"name": "Nox",
+			"source": "LuasRaces",
+			"page": 0,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 1,
+						"amount": 2
+					}
+				},
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 1,
+						"amount": 1
+					}
+				}
+			],
+			"size": [
+				"M"
+			],
+			"creatureTypes": [
+				"humanoid"
+		
+			],
+			"speed": 30,
+			"darkvision": 30,
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"undercommon": true
+				}
+			],
+			"skillProficiencies": [
+				{
+				"Perception ": true
+				}
+			],
+
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"You mature at the same rate as humans, but they're considered young until they reach the age of 25. On average, they live about 500 years."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Alignment",
+					"entries": [
+						"Most Nox are cool and logical. They always try to gain an advantage with their behavior. Most Nox are Lawful neutral, there are quite a few individuals who tend towards Evil alignment."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Deine Größe ist normal."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 120 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Tinkers of the Underground",
+					"entries": [
+						"You can choose one Tool Proficiency ."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Keen Hearing",
+					"entries": [
+						"You are Proficient in Perception checks."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Psyonic Adaptation",
+					"entries": [
+						"You gain resistance to Psychic Damage."
+					]
+				}
+			],
+			"age": {
+				"mature": 25,
+				"max": 500 
+			}
+		}
+
+
+
+	],
+	"subrace": [
+		{
+			"name": "Passijeri-Singvogelartige",
+			"source": "LuasRaces",
+			"raceName": "Aviala",
+			"raceSource": "Aviala",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Verhandlungskünstler",
+					"entries": [
+						"Durch die schöne Singstimme der Passijeri hast du Vorteil auf Überredeproben die mit Verhandlungen zu tun haben."
+					]
+				}
+			]
+		},
+        {
+			"name": "Corvijeri - Krähenartige",
+			"source": "LuasRaces",
+			"raceName": "Aviala",
+			"raceSource": "Aviala",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Improvisationskünstler",
+					"entries": [
+						"Falls du nicht die benötigten Tool-Kit Kenntnisse für bestimmte Tätigkeiten hast, kannst du versuchen diese zu improvisieren. Du darfst für Tool-Kits in denen du nicht Proficient bist, die hälfte deines Prof. Bonus nutzen."
+					]
+				}
+			]     
+		},
+        {
+			"name": "Strigijeri - Eulenartige",
+			"source": "LuasRaces",
+			"raceName": "Aviala",
+			"raceSource": "Aviala",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Zauberkünstler",
+					"entries": [
+						"Da Strigijeri eine hohe Affinität zu Magie haben, darfst du dir beim erstellen des Charakters einen Cantrip aus der Wizard Spell list aussuchen."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"Du hast eine Dunkelsicht von 60ft."
+					]
+				}
+			]    
+		},
+        {
+			"name": "Accipitrijeri - Raubvogelartige",
+			"source": "LuasRaces",
+			"raceName": "Aviala",
+			"raceSource": "Aviala",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Überlebenskünstler",
+					"entries": [
+						"Prof. auf Survival."
+					]
+				},
+                {
+					"type": "entries",
+					"name": "Falkenaugen",
+					"entries": [
+						"Accipitrijeri sind dafür bekannt, dass sie die Besten Augen weit und breit haben. Das stimmt auch! Genauso wie ihre Verwandten Raubvogelarten sind sie besser im Wahrnehmen mit dem Auge. Du bekommst Vorteil auf Wahrnehmungs Proben die sich auf deine Augen verlassen."
+					]
+				}
+			]
+		},
+		{
+			"name": "Wald-Nox",
+			"source": "LuasRaces",
+			"raceName": "Nox",
+			"raceSource": "Nox",
+			"climbing speed": 25,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Glide",
+					"entries": [
+						"One per Longrest you can cast Feather fall as a Reaction."
+					]
+				},
+                {
+					"type": "entries",
+					"name": "Climbing Feets",
+					"entries": [
+						"You learn how to Climb over every Obstacle you find in the Thick Forest of Lua. You gain a Climbing Speed of 25ft"
+					]
+				}
+			]
+		},
+		{
+			"name": "Grotten-Nox",
+			"source": "LuasRaces",
+			"raceName": "Nox",
+			"raceSource": "Nox",
+			"climbing speed": 25,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Shared Mind",
+					"entries": [
+						"You know the Message cantrip. Once you reach 3rd level, you can cast the Comprehend Languages Spell with this trait; you regain the ability to cast it when you finish a long rest. Once you reach 5th level, you can also cast the Detect Thoughts spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Your Wisdom/Int/Charisma is your spellcasting ability for these spells."
+					]
+				},
+                {
+					"type": "entries",
+					"name": "Infusion Expert",
+					"entries": [
+						"Whenever you make an Intelligence (Arcana) check related to Magical Enchantments, you are considered proficient in the Arcana skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
+					]
+				}
+			]
+		}
+
+    ]
+}
+    
