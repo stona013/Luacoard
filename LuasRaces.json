@@ -172,7 +172,7 @@
 		
 			],
 			"speed": 30,
-			"darkvision": 30,
+			"darkvision": 120,
 			"traitTags": [
 				"Uncommon Race"
 			],
@@ -328,7 +328,6 @@
 			"source": "LuasRaces",
 			"raceName": "Nox",
 			"raceSource": "Nox",
-			"climbing speed": 25,
 			"entries": [
 				{
 					"type": "entries",
