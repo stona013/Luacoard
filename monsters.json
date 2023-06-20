@@ -1,222 +1,417 @@
+User
 {
 	"_meta": {
 		"sources": [
 			{
-				"json": "Aviala",
-				"abbreviation": "LUA",
-				"full": "Aviala",
+				"json": "BloodAboveBloodBelow",
+				"abbreviation": "DDEP3",
+				"full": "Blood Above, Blood Below",
+				"url": "https://github.com/TheGiddyLimit/homebrew",
 				"authors": [
-					"krzysztof"
+					"Will Doyle",
+					"Claire Hoffman",
+					"Chris Tulach",
+					"Travis Woodall",
+					"Adam Lee",
+					"Chris Lindsay",
+					"Matt Sernett"
 				],
 				"convertedBy": [
-					"krzysztof"
+					"Demonlemontcotl"
 				],
-				"version": "1.0",
-				"url": "",
-				"targetSchema": "1.2"
+				"version": "unknown"
 			}
 		],
-		"dateAdded": 1643423127,
-		"dateLastModified": 1663792415
+		"dateAdded": 1656791472,
+		"dateLastModified": 1666126587,
+		"_dateLastModifiedHash": "3f768fb290"
 	},
-  "monster": [
-  {
-  "name": "Toulon, the Wing of Darkness",
-  "type": "monstrosity",
-  "data": {
-    "details": {
-      "source": "Homebrew",
-      "page": 0,
-      "size": "L",
-      "alignment": "CE"
-    },
-    "abilities": {
-      "str": 20,
-      "dex": 16,
-      "con": 18,
-      "int": 12,
-      "wis": 14,
-      "cha": 16
-    },
-    "attributes": {
-      "ac": 16,
-      "hp": {
-        "value": "200",
-        "formula": "16d10 + 112"
-      },
-      "speed": {
-        "fly": 60,
-        "walk": 50
-      }
-    },
-    "savingThrows": {
-      "dex": "+7",
-      "con": "+8",
-      "wis": "+5"
-    },
-    "skills": {
-      "perception": "+7"
-    },
-    "damageResistances": "necrotic",
-    "conditionImmunities": "frightened",
-    "senses": "darkvision 120 ft.",
-    "languages": "Common, Abyssal",
-    "challengeRating": "13",
-    "traits": [
-      {
-        "name": "Shadow Wings",
-        "description": "Toulon can unfurl its wings and create an aura of darkness within a 30-foot radius, negating normal and magical light of 3rd level or lower. Toulon can create or dismiss this darkness as an action."
-      },
-      {
-        "name": "Heart Devourer",
-        "description": "When Toulon hits a creature with an attack, the target must make a DC 16 Constitution saving throw. On a failed save, the target takes 4d12 + 5 piercing damage and 4d10 + 4 psychic damage. If the target dies, Toulon devours its heart, gaining 50 temporary hit points."
-      },
-      {
-        "name": "Dark Aura",
-        "description": "All creatures within 30 feet of Toulon have a -2 penalty to saving throws and attack rolls while within the Dark Aura."
-      }
-    ],
-    "actions": [
-      {
-        "name": "Multiattack",
-        "description": "Toulon makes three attacks: one with its antler and two with its claws."
-      },
-      {
-        "name": "Antler",
-        "type": "melee",
-        "attackBonus": "+10",
-        "reach": 10,
-        "target": "one target",
-        "description": "Hit: 2d10 + 5 piercing damage."
-      },
-      {
-        "name": "Claws",
-        "type": "melee",
-        "attackBonus": "+10",
-        "reach": 10,
-        "target": "one target",
-        "description": "Hit: 2d8 + 5 slashing damage."
-      },
-      {
-        "name": "Overwhelming Attack",
-        "description": "Toulon can use its action to perform an overwhelming attack. Each creature within a 20-foot radius of Toulon must make a DC 18 Dexterity saving throw or take 4d10 + 5 slashing damage and be incapacitated for 1 minute, reducing its speed to 0."
-      }
-    ]
-  }
-},
-    {
-  "name": "Shadow Wraith",
-  "type": "undead",
-  "data": {
-    "details": {
-      "source": "Homebrew",
-      "page": 0,
-      "size": "M",
-      "alignment": "CE"
-    },
-    "abilities": {
-      "str": 16,
-      "dex": 18,
-      "con": 16,
-      "int": 10,
-      "wis": 12,
-      "cha": 14
-    },
-    "attributes": {
-      "ac": 14,
-      "hp": {
-        "value": "90",
-        "formula": "12d8 + 36"
-      },
-      "speed": {
-        "fly": 60
-      }
-    },
-    "savingThrows": {
-      "dex": "+7",
-      "wis": "+4"
-    },
-    "skills": {
-      "stealth": "+7"
-    },
-    "damageResistances": "necrotic",
-    "damageImmunities": "poison",
-    "conditionImmunities": "exhaustion, poisoned",
-    "senses": "darkvision 60 ft., passive Perception 11",
-    "languages": "Common",
-    "challengeRating": "6",
-    "traits": [
-      {
-        "name": "Incorporeal Movement",
-        "description": "The shadow wraith can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object."
-      },
-      {
-        "name": "Chilling Touch",
-        "type": "melee",
-        "attackBonus": "+7",
-        "reach": 5,
-        "target": "one target",
-        "description": "Hit: 4d6 + 4 cold damage."
-      },
-      {
-        "name": "Shadow Stealth",
-        "description": "While in dim light or darkness, the shadow wraith can take the Hide action as a bonus action."
-      }
-    ]
-  }
-},
-    {
-  "name": "Shadow Beast",
-  "type": "monstrosity",
-  "data": {
-    "details": {
-      "source": "Homebrew",
-      "page": 0,
-      "size": "M",
-      "alignment": "NE"
-    },
-    "abilities": {
-      "str": 16,
-      "dex": 14,
-      "con": 13,
-      "int": 6,
-      "wis": 10,
-      "cha": 7
-    },
-    "attributes": {
-      "ac": 13,
-      "hp": {
-        "value": "33",
-        "formula": "6d8 + 6"
-      },
-      "speed": {
-        "walk": 40
-      }
-    },
-    "skills": {
-      "stealth": "+4"
-    },
-    "senses": "darkvision 60 ft., passive Perception 10",
-    "languages": "-",
-    "challengeRating": "2",
-    "traits": [
-      {
-        "name": "Shadowy Tendrils",
-        "description": "The shadow beast can extend its shadowy tendrils up to 10 feet and make a grapple attack as a bonus action. On a hit, the target is grappled (escape DC 12). While grappled, the target takes 7 (2d6) necrotic damage at the start of its turn."
-      }
-    ],
-    "actions": [
-      {
-        "name": "Claw",
-        "type": "melee",
-        "attackBonus": "+5",
-        "reach": 5,
-        "target": "one target",
-        "description": "Hit: 7 (1d8 + 3) slashing damage."
-      }
-    ],
-    "challengeXP": "100"
-  }
-},
-
-  ]
+	"monster": [
+		{
+			"name": "Beholder Eye of Flame",
+			"group": [
+				"Beholders"
+			],
+			"source": "BloodAboveBloodBelow",
+			"page": 72,
+			"size": [
+				"L"
+			],
+			"type": "aberration",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 180,
+				"formula": "19d10 + 76"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 20,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 18,
+			"int": 17,
+			"wis": 15,
+			"cha": 17,
+			"save": {
+				"int": "+8",
+				"wis": "+7",
+				"cha": "+8"
+			},
+			"skill": {
+				"perception": "+12"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 22,
+			"conditionImmune": [
+				"prone"
+			],
+			"languages": [
+				"Deep Speech",
+				"Undercommon"
+			],
+			"cr": "13",
+			"trait": [
+				{
+					"name": "Vulnerability Cone",
+					"entries": [
+						"The beholder's central eye creates an area of fire vulnerability in a 150-foot cone. All creatures within the cone gain vulnerability to fire. At the start of each of its turns, the beholder decides which way the cone faces and whether the cone is active."
+					]
+				},
+				{
+					"name": "Heated Body",
+					"entries": [
+						"A creature that touches the beholder or hits it with a melee attack while within 5 feet of it takes 7 ({@damage 2d6}) fire damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}14 ({@damage 4d6}) piercing damage plus 14  ({@damage 4d6}) fire damage "
+					]
+				},
+				{
+					"name": "Eye Rays",
+					"entries": [
+						"The beholder shoots three of the following magical eye rays at random (reroll duplicates, except for Flame Ray), choosing one to three targets it can see within 120 feet of it.",
+						"1-2. Flame Ray. The targeted creature must make a {@dc 16} Dexterity saving throw or take 44 ({@damage 8d10}) fire damage. or half as much damage on a successful save.",
+						"3. Fear Ray. The targeted creature must succeed on a {@dc 16} Wisdom saving throw or be {@condition frightened} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+						"4. Telekinetic Ray. If the target is a creature, it must succeed on a {@dc 16} Strength saving throw or the beholder moves it up to 30 feet in any direction. It is {@condition restrained} by the ray's telekinetic grip until the start of the beholder's next turn or until the beholder is {@condition incapacitated}.",
+						"If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any direction. The beholder can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"The beholder can take 3 legendary actions, using the Eye Ray option below. It can take only one legendary action at a time and only at the end of another creature's turn. The beholder regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Eye Ray",
+					"entries": [
+						"The beholder uses one random eye ray."
+					]
+				}
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"DS",
+				"U"
+			],
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"conditionInflictLegendary": [
+				"grappled"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"immune": [
+				"fire"
+			]
+		},
+		{
+			"name": "Jumping Spider",
+			"source": "BloodAboveBloodBelow",
+			"page": 77,
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d10 + 8",
+				"average": 52
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 14,
+			"dex": 16,
+			"con": 12,
+			"int": 2,
+			"wis": 11,
+			"cha": 4,
+			"skill": {
+				"stealth": "+7"
+			},
+			"senses": [
+				"blindsight 10 ft.",
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"trait": [
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Web Sense",
+					"entries": [
+						"While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The spider ignores movement restrictions caused by webbing."
+					]
+				}
+			],
+			"traitTags": [
+				"Spider Climb",
+				"Web Sense",
+				"Web Walker"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"damageTags": [
+				"I"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"bonus": [
+				{
+					"name": "Jump",
+					"entries": [
+						"The spider's long jump is up to 40 feet and its high jump is up to 20 feet when it has a running start."
+					]
+				}
+			]
+		},
+		{
+			"name": "Spitting Spider",
+			"source": "BloodAboveBloodBelow",
+			"page": 77,
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d10 + 8",
+				"average": 52
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 14,
+			"dex": 16,
+			"con": 12,
+			"int": 2,
+			"wis": 11,
+			"cha": 4,
+			"skill": {
+				"stealth": "+7"
+			},
+			"senses": [
+				"blindsight 10 ft.",
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"trait": [
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Web Sense",
+					"entries": [
+						"While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The spider ignores movement restrictions caused by webbing."
+					]
+				}
+			],
+			"traitTags": [
+				"Spider Climb",
+				"Web Sense",
+				"Web Walker"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"damageTags": [
+				"I"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"bonus": [
+				{
+					"name": "Spit Venom {@recharge 5}",
+					"entries": [
+						"As a bonus action on your turn, the spider spits venom at an enemy. {@atk rw} {@hit 5} to hit, range 30/60 ft., one creature. {@h}11 ({@damage 3d6}) poison damage"
+					]
+				}
+			],
+			"miscTags": [
+				"RW"
+			]
+		},
+		{
+			"name": "Thug Spider",
+			"source": "BloodAboveBloodBelow",
+			"page": 77,
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d10 + 12",
+				"average": 78
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 14,
+			"dex": 16,
+			"con": 12,
+			"int": 2,
+			"wis": 11,
+			"cha": 4,
+			"skill": {
+				"stealth": "+7"
+			},
+			"senses": [
+				"blindsight 10 ft.",
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"trait": [
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Web Sense",
+					"entries": [
+						"While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The spider ignores movement restrictions caused by webbing."
+					]
+				}
+			],
+			"traitTags": [
+				"Spider Climb",
+				"Web Sense",
+				"Web Walker"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"damageTags": [
+				"I"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"reaction": [
+				{
+					"name": "Shield",
+					"entries": [
+						"You can use your reaction to have the spider shield you or an ally within 10ft from an attack. If so, the spider takes half the damage from the attack."
+					]
+				}
+			]
+		}
+	]
+}
