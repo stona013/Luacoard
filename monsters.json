@@ -1,1 +1,222 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Aviala",
+				"abbreviation": "LUA",
+				"full": "Aviala",
+				"authors": [
+					"krzysztof"
+				],
+				"convertedBy": [
+					"krzysztof"
+				],
+				"version": "1.0",
+				"url": "",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1643423127,
+		"dateLastModified": 1663792415
+	},
+  "monster": [
+  {
+  "name": "Toulon, the Wing of Darkness",
+  "type": "monstrosity",
+  "data": {
+    "details": {
+      "source": "Homebrew",
+      "page": 0,
+      "size": "L",
+      "alignment": "CE"
+    },
+    "abilities": {
+      "str": 20,
+      "dex": 16,
+      "con": 18,
+      "int": 12,
+      "wis": 14,
+      "cha": 16
+    },
+    "attributes": {
+      "ac": 16,
+      "hp": {
+        "value": "200",
+        "formula": "16d10 + 112"
+      },
+      "speed": {
+        "fly": 60,
+        "walk": 50
+      }
+    },
+    "savingThrows": {
+      "dex": "+7",
+      "con": "+8",
+      "wis": "+5"
+    },
+    "skills": {
+      "perception": "+7"
+    },
+    "damageResistances": "necrotic",
+    "conditionImmunities": "frightened",
+    "senses": "darkvision 120 ft.",
+    "languages": "Common, Abyssal",
+    "challengeRating": "13",
+    "traits": [
+      {
+        "name": "Shadow Wings",
+        "description": "Toulon can unfurl its wings and create an aura of darkness within a 30-foot radius, negating normal and magical light of 3rd level or lower. Toulon can create or dismiss this darkness as an action."
+      },
+      {
+        "name": "Heart Devourer",
+        "description": "When Toulon hits a creature with an attack, the target must make a DC 16 Constitution saving throw. On a failed save, the target takes 4d12 + 5 piercing damage and 4d10 + 4 psychic damage. If the target dies, Toulon devours its heart, gaining 50 temporary hit points."
+      },
+      {
+        "name": "Dark Aura",
+        "description": "All creatures within 30 feet of Toulon have a -2 penalty to saving throws and attack rolls while within the Dark Aura."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "description": "Toulon makes three attacks: one with its antler and two with its claws."
+      },
+      {
+        "name": "Antler",
+        "type": "melee",
+        "attackBonus": "+10",
+        "reach": 10,
+        "target": "one target",
+        "description": "Hit: 2d10 + 5 piercing damage."
+      },
+      {
+        "name": "Claws",
+        "type": "melee",
+        "attackBonus": "+10",
+        "reach": 10,
+        "target": "one target",
+        "description": "Hit: 2d8 + 5 slashing damage."
+      },
+      {
+        "name": "Overwhelming Attack",
+        "description": "Toulon can use its action to perform an overwhelming attack. Each creature within a 20-foot radius of Toulon must make a DC 18 Dexterity saving throw or take 4d10 + 5 slashing damage and be incapacitated for 1 minute, reducing its speed to 0."
+      }
+    ]
+  }
+},
+    {
+  "name": "Shadow Wraith",
+  "type": "undead",
+  "data": {
+    "details": {
+      "source": "Homebrew",
+      "page": 0,
+      "size": "M",
+      "alignment": "CE"
+    },
+    "abilities": {
+      "str": 16,
+      "dex": 18,
+      "con": 16,
+      "int": 10,
+      "wis": 12,
+      "cha": 14
+    },
+    "attributes": {
+      "ac": 14,
+      "hp": {
+        "value": "90",
+        "formula": "12d8 + 36"
+      },
+      "speed": {
+        "fly": 60
+      }
+    },
+    "savingThrows": {
+      "dex": "+7",
+      "wis": "+4"
+    },
+    "skills": {
+      "stealth": "+7"
+    },
+    "damageResistances": "necrotic",
+    "damageImmunities": "poison",
+    "conditionImmunities": "exhaustion, poisoned",
+    "senses": "darkvision 60 ft., passive Perception 11",
+    "languages": "Common",
+    "challengeRating": "6",
+    "traits": [
+      {
+        "name": "Incorporeal Movement",
+        "description": "The shadow wraith can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object."
+      },
+      {
+        "name": "Chilling Touch",
+        "type": "melee",
+        "attackBonus": "+7",
+        "reach": 5,
+        "target": "one target",
+        "description": "Hit: 4d6 + 4 cold damage."
+      },
+      {
+        "name": "Shadow Stealth",
+        "description": "While in dim light or darkness, the shadow wraith can take the Hide action as a bonus action."
+      }
+    ]
+  }
+},
+    {
+  "name": "Shadow Beast",
+  "type": "monstrosity",
+  "data": {
+    "details": {
+      "source": "Homebrew",
+      "page": 0,
+      "size": "M",
+      "alignment": "NE"
+    },
+    "abilities": {
+      "str": 16,
+      "dex": 14,
+      "con": 13,
+      "int": 6,
+      "wis": 10,
+      "cha": 7
+    },
+    "attributes": {
+      "ac": 13,
+      "hp": {
+        "value": "33",
+        "formula": "6d8 + 6"
+      },
+      "speed": {
+        "walk": 40
+      }
+    },
+    "skills": {
+      "stealth": "+4"
+    },
+    "senses": "darkvision 60 ft., passive Perception 10",
+    "languages": "-",
+    "challengeRating": "2",
+    "traits": [
+      {
+        "name": "Shadowy Tendrils",
+        "description": "The shadow beast can extend its shadowy tendrils up to 10 feet and make a grapple attack as a bonus action. On a hit, the target is grappled (escape DC 12). While grappled, the target takes 7 (2d6) necrotic damage at the start of its turn."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Claw",
+        "type": "melee",
+        "attackBonus": "+5",
+        "reach": 5,
+        "target": "one target",
+        "description": "Hit: 7 (1d8 + 3) slashing damage."
+      }
+    ],
+    "challengeXP": "100"
+  }
+},
 
+  ]
