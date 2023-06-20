@@ -108,7 +108,7 @@
     }
   ]
 },
-		{
+{
   "name": "Shadow Wraith",
   "size": "Medium",
   "type": "undead",
@@ -212,5 +212,5 @@
     }
   ]
 }
-	]
+]
 }
