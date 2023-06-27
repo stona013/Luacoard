@@ -2,7 +2,7 @@
   "_meta": {
     "sources": [
       {
-        "json": "monsters4",
+        "json": "monsters5",
         "abbreviation": "DDEP3",
         "full": "Blood Above, Blood Below",
         "url": "https://github.com/TheGiddyLimit/homebrew",
@@ -28,7 +28,7 @@
   "monster": [
     {
       "name": "Bloodthorn Viper",
-      "source": "monsters4",
+      "source": "monsters5",
       "size": [
         "M"
       ],
@@ -94,7 +94,7 @@
     },
     {
       "name": "Ironjaw Troll",
-      "source": "monsters4",
+      "source": "monsters5",
       "size": [
         "L"
       ],
@@ -203,7 +203,7 @@
     },
     {
       "name": "Thornback Basilisk",
-      "source": "monsters4",
+      "source": "monsters5",
       "size": [
         "L"
       ],
