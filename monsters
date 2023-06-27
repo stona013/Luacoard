@@ -189,20 +189,20 @@
       "miscTags": [
         "MW"
       ],
-      "tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/token/stormsorcerer.png",
+      "tokenUrl": "",
       "fluff": {
         "images": [
           {
             "type": "image",
             "href": {
               "type": "external",
-              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/stormsorcerer.webp"
+              "url": ""
             }
           },
           {
             "type": "image",
             "href": {
-              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/mme_v2/img/001-7634.webp",
+              "url": "",
               "type": "external"
             }
           }
@@ -220,7 +220,7 @@
       "altArt": [
         {
           "source": "MME_v2",
-          "tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/mme_v2/token/Storm Sorcerer Token.webp",
+          "tokenUrl": "",
           "name": "v2 art"
         }
       ],
@@ -372,14 +372,14 @@
       "miscTags": [
         "MW"
       ],
-      "tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/token/stormpriest.png",
+      "tokenUrl": "",
       "fluff": {
         "images": [
           {
             "type": "image",
             "href": {
               "type": "external",
-              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/stormpriest.webp"
+              "url": ""
             }
           }
         ]
@@ -509,20 +509,20 @@
         "RW",
         "RNG"
       ],
-      "tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/token/skirmisherelite.png",
+      "tokenUrl": "",
       "fluff": {
         "images": [
           {
             "type": "image",
             "href": {
               "type": "external",
-              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/skirmisher.webp"
+              "url": ""
             }
           },
           {
             "type": "image",
             "href": {
-              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/mme_v2/img/0158.webp",
+              "url": "",
               "type": "external"
             }
           }
@@ -532,7 +532,7 @@
       "altArt": [
         {
           "source": "MME_v2",
-          "tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/mme_v2/token/Skirmisher Elite Token.webp",
+          "tokenUrl": "",
           "name": "v2 art"
         }
       ],
