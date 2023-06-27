@@ -28,7 +28,7 @@
   "monster": [
     {
       "name": "Storm Sorcerer",
-      "source": "MonsterManualExpanded",
+      "source": "monsters",
       "size": [
         "M"
       ],
@@ -230,7 +230,7 @@
     },
     {
       "name": "Storm Priest",
-      "source": "MonsterManualExpanded",
+      "source": "monsters",
       "size": [
         "M"
       ],
@@ -400,7 +400,7 @@
     },
     {
       "name": "Skirmisher Elite",
-      "source": "MonsterManualExpanded",
+      "source": "monsters",
       "size": [
         "M"
       ],
@@ -543,7 +543,7 @@
     },
     {
       "name": "Toulon, the Wing of Darkness",
-      "source": "Custom",
+      "source": "monsters",
       "page": 0,
       "size": [
         "L"
@@ -646,7 +646,7 @@
     },
     {
       "name": "Shadow Wraith",
-      "source": "Custom",
+      "source": "monsters",
       "page": 0,
       "size": [
         "M"
@@ -720,7 +720,7 @@
     },
     {
       "name": "Shadow Beast",
-      "source": "Custom",
+      "source": "monsters",
       "page": 0,
       "size": [
         "M"
@@ -775,159 +775,6 @@
           ]
         }
       ]
-    },
-    {
-      "name": "Frostwing",
-      "source": "Homebrew",
-      "page": 0,
-      "size": "H",
-      "type": "monstrosity",
-      "alignment": "unaligned",
-      "ac": [
-        {
-          "ac": 20,
-          "from": [
-            "natural armor"
-          ]
-        }
-      ],
-      "hp": {
-        "formula": "20d10 + 140",
-        "average": 250
-      },
-      "speed": {
-        "walk": 60,
-        "fly": 120,
-        "hover": true
-      },
-      "str": 24,
-      "dex": 18,
-      "con": 26,
-      "int": 12,
-      "wis": 16,
-      "cha": 14,
-      "savingThrows": {
-        "dex": "+9",
-        "con": "+12",
-        "wis": "+7"
-      },
-      "skills": {
-        "perception": "+8",
-        "stealth": "+9"
-      },
-      "damageResistances": [
-        "cold",
-        "bludgeoning",
-        "piercing",
-        "slashing (non-magical)"
-      ],
-      "conditionImmunities": [
-        "frightened"
-      ],
-      "senses": [
-        "blindsight 120 ft.",
-        "darkvision 60 ft."
-      ],
-      "passive": 18,
-      "specialTraits": [
-        {
-          "name": "Aerial Domination",
-          "entries": [
-            "Advantage on saving throws against effects that would knock Frostwing prone. Can hover and make sharp turns without penalty."
-          ]
-        },
-        {
-          "name": "Scale Shield",
-          "entries": [
-            "Resistance to cold damage and non-magical bludgeoning, piercing, and slashing damage."
-          ]
-        }
-      ],
-      "traitTags": [
-        "Aerial Domination",
-        "Scale Shield"
-      ],
-      "senseTags": [
-        "B",
-        "D"
-      ],
-      "damageTags": [
-        "B",
-        "P",
-        "S"
-      ],
-      "languages": "Understands Common and Draconic, but cannot speak",
-      "actions": [
-        {
-          "name": "Multiattack",
-          "entries": [
-            "Frostwing makes three attacks: one with its Bite and two with its Talons."
-          ]
-        },
-        {
-          "name": "Bite",
-          "entries": [
-            "{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}22 ({@damage 3d8 + 9}) piercing damage plus 14 ({@damage 4d6}) cold damage."
-          ]
-        },
-        {
-          "name": "Talons",
-          "entries": [
-            "{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}19 ({@damage 3d6 + 9}) slashing damage plus 14 ({@damage 4d6}) cold damage."
-          ]
-        },
-        {
-          "name": "Frost Breath",
-          "entries": [
-            "Frostwing exhales a cone of freezing breath in a 60-foot cone. Each creature in the area must make a DC 18 Dexterity saving throw, taking 45 (10d8) cold damage on a failed save, or half as much damage on a successful one. Additionally, creatures that fail the saving throw are restrained until the end of their next turn."
-          ]
-        },
-        {
-          "name": "Arctic Dive",
-          "entries": [
-            "Frostwing dives towards a ship or airborne target, attempting to slam into it. The target must make a DC 18 Dexterity saving throw. On a failed save, the target takes 55 (10d10) bludgeoning damage and is knocked prone. On a successful save, the target takes half the damage and is not knocked prone."
-          ]
-        },
-        {
-          "name": "Winter's Embrace",
-          "usage": {
-            "type": "recharge",
-            "times": 5,
-            "dice": 6
-          },
-          "entries": [
-            "Frostwing envelops itself in a frigid aura, causing the surrounding air to freeze. All creatures within a 30-foot radius of Frostwing must make a DC 18 Constitution saving throw or take 55 (10d10) cold damage and become restrained for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
-          ]
-        }
-      ],
-      "legendaryActions": {
-        "desc": "Frostwing can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time, and only at the end of another creature's turn. Frostwing regains spent legendary actions at the start of its turn.",
-        "actions": [
-          {
-            "name": "Chilling Gaze",
-            "entries": [
-              "Frostwing targets a creature within 60 feet of it. The target must succeed on a DC 16 Wisdom saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
-            ]
-          },
-          {
-            "name": "Glacial Assault",
-            "entries": [
-              "Frostwing makes a Bite or Talons attack."
-            ]
-          },
-          {
-            "name": "Frost Nova",
-            "cost": 2,
-            "entries": [
-              "Frostwing releases a powerful burst of cold energy, creating a freezing explosion in a 20-foot radius centered on itself. Each creature in the area must make a DC 18 Dexterity saving throw, taking 33 (6d10) cold damage on a failed save, or half as much damage on a successful one. Additionally, creatures that fail the saving throw have their speed reduced to 0 until the end of their next turn."
-            ]
-          }
-        ]
-      },
-      "environment": [
-        "arctic"
-      ],
-      "cr": "14"
     }
   ]
 }
