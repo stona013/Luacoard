@@ -28,45 +28,51 @@
   "monster": [
     {
       "name": "Bloodthorn Viper",
-      "size": "Medium",
-      "type": "Monstrosity",
-      "alignment": "Unaligned",
-      "armor_class": 15,
-      "hit_points": 75,
-      "hit_dice": "10d8 + 30",
+      "source": "monsters4",
+      "size": ["M"],
+      "type": {
+        "type": "monstrosity",
+        "tags": ["unaligned"]
+      },
+      "alignment": ["A"],
+      "ac": [
+        {
+          "ac": 15,
+          "from": ["natural armor"]
+        }
+      ],
+      "hp": {
+        "average": 75,
+        "formula": "10d8 + 30"
+      },
       "speed": {
         "walk": 30,
         "swim": 30
       },
-      "ability_scores": {
-        "str": 14,
-        "dex": 18,
-        "con": 16,
-        "int": 2,
-        "wis": 12,
-        "cha": 6
-      },
-      "saving_throws": {},
-      "skills": {
+      "str": 14,
+      "dex": 18,
+      "con": 16,
+      "int": 2,
+      "wis": 12,
+      "cha": 6,
+      "skill": {
         "stealth": "+6"
       },
-      "damage_resistances": [],
-      "damage_immunities": [],
-      "condition_immunities": [],
-      "senses": {
-        "blindsight": "10 ft.",
-        "passive_perception": 11
-      },
+      "passive": 11,
       "languages": [],
-      "challenge_rating": 4,
-      "special_traits": [
+      "cr": "4",
+      "trait": [
         {
           "name": "Blood Drain",
-          "description": "When the bloodthorn viper hits a creature with its bite attack, it injects a venomous bite that deals 10 (2d6 + 4) piercing damage plus 7 (2d6) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+          "entries": [
+            "When the bloodthorn viper hits a creature with its bite attack, it injects a venomous bite that deals 10 (2d6 + 4) piercing damage plus 7 (2d6) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+          ]
         },
         {
           "name": "Slippery Swimmer",
-          "description": "The bloodthorn viper has advantage on ability checks and saving throws made to escape from grapples or restraints."
+          "entries": [
+            "The bloodthorn viper has advantage on ability checks and saving throws made to escape from grapples or restraints."
+          ]
         }
       ],
       "actions": [
