@@ -1,0 +1,780 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "monsters",
+        "abbreviation": "DDEP3",
+        "full": "Blood Above, Blood Below",
+        "url": "https://github.com/TheGiddyLimit/homebrew",
+        "authors": [
+          "Will Doyle",
+          "Claire Hoffman",
+          "Chris Tulach",
+          "Travis Woodall",
+          "Adam Lee",
+          "Chris Lindsay",
+          "Matt Sernett"
+        ],
+        "convertedBy": [
+          "Demonlemontcotl"
+        ],
+        "version": "unknown"
+      }
+    ],
+    "dateAdded": 1656791472,
+    "dateLastModified": 1666126587,
+    "_dateLastModifiedHash": "3f768fb290"
+  },
+  "monster": [
+    {
+      "name": "Storm Sorcerer",
+      "source": "monsters",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "any race"
+        ]
+      },
+      "alignment": [
+        "A"
+      ],
+      "ac": [
+        13,
+        {
+          "ac": 16,
+          "condition": "with {@spell mage armor}",
+          "braces": true
+        }
+      ],
+      "hp": {
+        "average": 61,
+        "formula": "11d8 + 11"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 10,
+      "dex": 16,
+      "con": 12,
+      "int": 10,
+      "wis": 12,
+      "cha": 18,
+      "skill": {
+        "arcana": "+3",
+        "perception": "+4"
+      },
+      "passive": 14,
+      "resist": [
+        "lightning",
+        "thunder"
+      ],
+      "languages": [
+        "any one language (usually Common)"
+      ],
+      "cr": "7",
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "The storm sorcerer is an 11th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 15}, {@hit 7} to hit with spell attacks). It has the following sorcerer spells prepared:"
+          ],
+          "spells": {
+            "0": {
+              "spells": [
+                "{@spell mage hand}",
+                "{@spell fire bolt}",
+                "{@spell light}",
+                "{@spell shocking grasp}"
+              ]
+            },
+            "1": {
+              "slots": 4,
+              "spells": [
+                "{@spell mage armor}",
+                "{@spell thunderwave}"
+              ]
+            },
+            "2": {
+              "slots": 3,
+              "spells": [
+                "{@spell gust of wind}",
+                "{@spell misty step}",
+                "{@spell shatter}"
+              ]
+            },
+            "3": {
+              "slots": 3,
+              "spells": [
+                "{@spell lightning bolt}",
+                "{@spell tidal wave|XGE}"
+              ]
+            },
+            "4": {
+              "slots": 3,
+              "spells": [
+                "{@spell ice storm}",
+                "{@spell storm sphere|XGE}"
+              ]
+            },
+            "5": {
+              "slots": 2,
+              "spells": [
+                "{@spell control winds|XGE}",
+                "{@spell synaptic static|XGE}"
+              ]
+            },
+            "6": {
+              "slots": 1,
+              "spells": [
+                "{@spell chain lightning}"
+              ]
+            }
+          },
+          "ability": "cha"
+        }
+      ],
+      "trait": [
+        {
+          "name": "Heart of the Storm",
+          "entries": [
+            "Whenever the storm sorcerer casts a spell other than a cantrip that deals lightning or thunder damage, a stormy aura surrounds it. In addition to the spell's effects, creatures of its choice within 10 feet of it take 5 lightning or thunder damage (storm sorcerer' choice)."
+          ]
+        },
+        {
+          "name": "Sorcery Points",
+          "entries": [
+            "The storm sorcerer has 11 sorcery points. It can spend 1 or more sorcery points as a bonus action to gain one of the following benefits:",
+            {
+              "type": "list",
+              "style": "list-hang-notitle",
+              "items": [
+                {
+                  "type": "itemSub",
+                  "name": "Heightened Spell:",
+                  "entry": "When the storm sorcerer casts a spell that forces a creature to make a saving throw to resist the spell's effects, it can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw against the spell."
+                },
+                {
+                  "type": "itemSub",
+                  "name": "Quickened Spell:",
+                  "entry": "When the storm sorcerer casts a spell that has a casting time of 1 action, it can spend 2 sorcery points to change the casting time to 1 bonus action for this casting."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Spear",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage, or 6 ({@damage 1d8 + 2}) piercing damage if used with two hands to make a melee attack."
+          ]
+        }
+      ],
+      "languageTags": [
+        "C",
+        "X"
+      ],
+      "damageTags": [
+        "P",
+        "L",
+        "T"
+      ],
+      "spellcastingTags": [
+        "CS"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/token/stormsorcerer.png",
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/stormsorcerer.webp"
+            }
+          },
+          {
+            "type": "image",
+            "href": {
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/mme_v2/img/001-7634.webp",
+              "type": "external"
+            }
+          }
+        ]
+      },
+      "page": 0,
+      "damageTagsSpell": [
+        "B",
+        "C",
+        "F",
+        "L",
+        "T",
+        "Y"
+      ],
+      "altArt": [
+        {
+          "source": "MME_v2",
+          "tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/mme_v2/token/Storm Sorcerer Token.webp",
+          "name": "v2 art"
+        }
+      ],
+      "attachedItems": [
+        "spear|phb"
+      ]
+    },
+    {
+      "name": "Storm Priest",
+      "source": "monsters",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "any race"
+        ]
+      },
+      "alignment": [
+        "C",
+        "G",
+        "NY",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 15,
+          "from": [
+            "{@item breastplate|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 59,
+        "formula": "9d8 + 18"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 14,
+      "dex": 12,
+      "con": 14,
+      "int": 10,
+      "wis": 17,
+      "cha": 10,
+      "save": {
+        "con": "+4",
+        "wis": "+5",
+        "cha": "+2"
+      },
+      "skill": {
+        "perception": "+5",
+        "religion": "+5",
+        "survival": "+5"
+      },
+      "passive": 16,
+      "languages": [
+        "any one language (usually Common)"
+      ],
+      "cr": "4",
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "The storm priest is a 9th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It has the following cleric spells prepared:"
+          ],
+          "spells": {
+            "0": {
+              "spells": [
+                "{@spell mending}",
+                "{@spell resistance}",
+                "{@spell toll the dead|XGE}",
+                "{@spell thaumaturgy}"
+              ]
+            },
+            "1": {
+              "slots": 4,
+              "spells": [
+                "{@spell fog cloud}",
+                "{@spell inflict wounds}",
+                "{@spell thunderwave}"
+              ]
+            },
+            "2": {
+              "slots": 3,
+              "spells": [
+                "{@spell gust of wind}",
+                "{@spell hold person}",
+                "{@spell shatter}"
+              ]
+            },
+            "3": {
+              "slots": 3,
+              "spells": [
+                "{@spell bestow curse}",
+                "{@spell call lightning}",
+                "{@spell sleet storm}"
+              ]
+            },
+            "4": {
+              "slots": 3,
+              "spells": [
+                "{@spell banishment}",
+                "{@spell control water}",
+                "{@spell ice storm}"
+              ]
+            },
+            "5": {
+              "slots": 1,
+              "spells": [
+                "{@spell control winds|XGE}",
+                "{@spell destructive wave}",
+                "{@spell insect plague}"
+              ]
+            }
+          },
+          "ability": "wis"
+        }
+      ],
+      "action": [
+        {
+          "name": "Spear",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage, or 6 ({@damage 1d8 + 2}) piercing damage if used with two hands to make a melee attack, plus 4 ({@damage 1d8}) thunder damage."
+          ]
+        }
+      ],
+      "reaction": [
+        {
+          "name": "Wrath of the Storm (3/day)",
+          "entries": [
+            "When a creature within 5 feet of the storm priest hits the storm priest with an attack, and the storm priest can see the creature, the storm priest can magically force the creature to make a {@dc 14} Dexterity saving throw. The creature takes 9 ({@damage 2d8}) lightning or thunder damage on a failed saving throw, and half as much damage on a successful one."
+          ]
+        }
+      ],
+      "languageTags": [
+        "C",
+        "X"
+      ],
+      "damageTags": [
+        "P",
+        "T",
+        "L"
+      ],
+      "spellcastingTags": [
+        "CC"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/token/stormpriest.png",
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/stormpriest.webp"
+            }
+          }
+        ]
+      },
+      "page": 0,
+      "damageTagsSpell": [
+        "B",
+        "C",
+        "L",
+        "N",
+        "P",
+        "R",
+        "T"
+      ],
+      "attachedItems": [
+        "spear|phb"
+      ]
+    },
+    {
+      "name": "Skirmisher Elite",
+      "source": "monsters",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "any race"
+        ]
+      },
+      "alignment": [
+        "A"
+      ],
+      "ac": [
+        {
+          "ac": 15,
+          "from": [
+            "{@item studded leather armor|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 65,
+        "formula": "10d8 + 20"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 10,
+      "dex": 18,
+      "con": 14,
+      "int": 10,
+      "wis": 12,
+      "cha": 10,
+      "skill": {
+        "perception": "+3",
+        "stealth": "+6"
+      },
+      "passive": 13,
+      "languages": [
+        "any one language (usually Common)"
+      ],
+      "cr": "4",
+      "trait": [
+        {
+          "name": "Lightfooted",
+          "entries": [
+            "The skirmisher can take the {@action Dash} or {@action Disengage} action as a bonus action on each of its turns."
+          ]
+        },
+        {
+          "name": "Skirmish Advantage",
+          "entries": [
+            "The skirmisher gains advantage on its first attack roll this turn if it has moved at least 15 feet from its space at the beginning of its turn."
+          ]
+        },
+        {
+          "name": "Sneak Attack (1/Turn)",
+          "entries": [
+            "The skirmisher deals an extra 10 ({@dice 3d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the skirmisher that isn't {@condition incapacitated} and the skirmisher doesn't have disadvantage on the attack roll."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The skald makes two melee attacks or two ranged attacks."
+          ]
+        },
+        {
+          "name": "Shortsword",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+          ]
+        },
+        {
+          "name": "Longbow",
+          "entries": [
+            "{@atk rw} {@hit 6} to hit, range 150/600 ft., one creature. {@h}8 ({@damage 1d8 + 4}) piercing damage."
+          ]
+        }
+      ],
+      "reaction": [
+        {
+          "name": "Skirmisher",
+          "entries": [
+            "When an enemy the skirmisher can see ends its turn within 5 feet of it, the skirmisher can move up to half its speed. This movement doesn't provoke {@action opportunity attack|phb|opportunity attacks}."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Sneak Attack"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "languageTags": [
+        "C",
+        "X"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MW",
+        "RW",
+        "RNG"
+      ],
+      "tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/token/skirmisherelite.png",
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/skirmisher.webp"
+            }
+          },
+          {
+            "type": "image",
+            "href": {
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/mme_v2/img/0158.webp",
+              "type": "external"
+            }
+          }
+        ]
+      },
+      "page": 0,
+      "altArt": [
+        {
+          "source": "MME_v2",
+          "tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/mme_v2/token/Skirmisher Elite Token.webp",
+          "name": "v2 art"
+        }
+      ],
+      "attachedItems": [
+        "longbow|phb",
+        "shortsword|phb"
+      ]
+    },
+    {
+      "name": "Toulon, the Wing of Darkness",
+      "source": "monsters",
+      "page": 0,
+      "size": [
+        "L"
+      ],
+      "type": "monstrosity",
+      "alignment": [
+        "CE"
+      ],
+      "ac": [
+        {
+          "ac": 16,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "200 (16d10 + 112)",
+        "average": 200
+      },
+      "speed": {
+        "fly": 60,
+        "walk": 50
+      },
+      "str": 20,
+      "dex": 16,
+      "con": 18,
+      "int": 12,
+      "wis": 14,
+      "cha": 16,
+      "savingThrows": {
+        "dex": "+7",
+        "con": "+8",
+        "wis": "+5"
+      },
+      "skill": {
+        "perception": "+7"
+      },
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "damageResistances": [
+        "necrotic"
+      ],
+      "conditionImmunities": [
+        "frightened"
+      ],
+      "languages": [
+        "Common",
+        "Abyssal"
+      ],
+      "trait": [
+        {
+          "name": "Shadow Wings",
+          "entries": [
+            "Toulon can unfurl its wings and create an aura of darkness within a 30-foot radius, negating normal and magical light of 3rd level or lower. Toulon can create or dismiss this darkness as an action."
+          ]
+        },
+        {
+          "name": "Heart Devourer",
+          "entries": [
+            "When Toulon hits a creature with an attack, the target must make a DC 16 Constitution saving throw. On a failed save, the target takes 4d12 + 5 piercing damage and 4d10 + 4 psychic damage. If the target dies, Toulon devours its heart, gaining 50 temporary hit points."
+          ],
+          "recharge": "5-6"
+        },
+        {
+          "name": "Dark Aura",
+          "entries": [
+            "All creatures within 30 feet of Toulon have a -2 penalty to saving throws and attack rolls while within the Dark Aura."
+          ]
+        },
+        {
+          "name": "Bladestorm Assault",
+          "entries": [
+            "Toulon transforms into an Avatar of Serrated Annihilation. It releases a swirling vortex of razor-sharp blades in a 60-foot cone. Creatures caught in the cone must make a DC 18 Dexterity saving throw. On a failed save, they take 10d10 slashing damage and suffer a bleeding wound. At the start of each of their turns, creatures affected by the bleeding wound take an additional 1d6 slashing damage. The bleeding effect persists until they receive magical healing or succeed on a DC 15 Constitution saving throw to staunch the bleeding. The affected creatures are also blinded for 1 minute. They can repeat the saving throw at the end of each of their turns, ending the blindness on a success.",
+            "Usage 1/Day"
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Toulon makes three attacks: one with its antler and two with its claws."
+          ]
+        },
+        {
+          "name": "Antler",
+          "entries": [
+            "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 2d10 + 5 piercing damage."
+          ]
+        },
+        {
+          "name": "Claws",
+          "entries": [
+            "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 2d8 + 5 slashing damage."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Shadow Wraith",
+      "source": "monsters",
+      "page": 0,
+      "size": [
+        "M"
+      ],
+      "type": "undead",
+      "alignment": [
+        "CE"
+      ],
+      "ac": [
+        {
+          "ac": 14
+        }
+      ],
+      "hp": {
+        "formula": "90 (12d8 + 36)",
+        "average": 90
+      },
+      "speed": {
+        "fly": 60
+      },
+      "str": 16,
+      "dex": 18,
+      "con": 16,
+      "int": 10,
+      "wis": 12,
+      "cha": 14,
+      "savingThrows": {
+        "dex": "+7",
+        "wis": "+4"
+      },
+      "skill": {
+        "stealth": "+7"
+      },
+      "damageResistances": [
+        "necrotic"
+      ],
+      "damageImmunities": [
+        "poison"
+      ],
+      "conditionImmunities": [
+        "exhaustion",
+        "poisoned"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 11"
+      ],
+      "languages": [
+        "Common"
+      ],
+      "trait": [
+        {
+          "name": "Incorporeal Movement",
+          "entries": [
+            "The shadow wraith can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object."
+          ]
+        },
+        {
+          "name": "Chilling Touch",
+          "entries": [
+            "Melee Spell Attack: +7 to hit, reach 5 ft., one target. Hit: 4d6 + 4 cold damage."
+          ]
+        },
+        {
+          "name": "Shadow Stealth",
+          "entries": [
+            "While in dim light or darkness, the shadow wraith can take the Hide action as a bonus action."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Shadow Beast",
+      "source": "monsters",
+      "page": 0,
+      "size": [
+        "M"
+      ],
+      "type": "monstrosity",
+      "alignment": [
+        "NE"
+      ],
+      "ac": [
+        {
+          "ac": 13,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "33 (6d8 + 6)",
+        "average": 33
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 16,
+      "dex": 14,
+      "con": 13,
+      "int": 6,
+      "wis": 10,
+      "cha": 7,
+      "skill": {
+        "stealth": "+4"
+      },
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 10"
+      ],
+      "languages": [],
+      "challenge": "1/2",
+      "trait": [
+        {
+          "name": "Shadowy Tendrils",
+          "entries": [
+            "The shadow beast can extend its shadowy tendrils up to 10 feet and make a grapple attack as a bonus action. On a hit, the target is grappled (escape DC 12). While grappled, the target takes 7 (2d6) necrotic damage at the start of its turn."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Claw",
+          "entries": [
+            "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage."
+          ]
+        }
+      ]
+    }
+  ]
+}
