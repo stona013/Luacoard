@@ -1,0 +1,545 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "monsters4",
+        "abbreviation": "DDEP3",
+        "full": "Blood Above, Blood Below",
+        "url": "https://github.com/TheGiddyLimit/homebrew",
+        "authors": [
+          "Will Doyle",
+          "Claire Hoffman",
+          "Chris Tulach",
+          "Travis Woodall",
+          "Adam Lee",
+          "Chris Lindsay",
+          "Matt Sernett"
+        ],
+        "convertedBy": [
+          "Demonlemontcotl"
+        ],
+        "version": "unknown"
+      }
+    ],
+    "dateAdded": 1656791472,
+    "dateLastModified": 1666126587,
+    "_dateLastModifiedHash": "3f768fb290"
+  },
+  "monster": [
+    {
+      "name": "Storm Sorcerer",
+      "source": "monsters4",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "any race"
+        ]
+      },
+      "alignment": [
+        "A"
+      ],
+      "ac": [
+        13,
+        {
+          "ac": 16,
+          "condition": "with {@spell mage armor}",
+          "braces": true
+        }
+      ],
+      "hp": {
+        "average": 61,
+        "formula": "11d8 + 11"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 10,
+      "dex": 16,
+      "con": 12,
+      "int": 10,
+      "wis": 12,
+      "cha": 18,
+      "skill": {
+        "arcana": "+3",
+        "perception": "+4"
+      },
+      "passive": 14,
+      "resist": [
+        "lightning",
+        "thunder"
+      ],
+      "languages": [
+        "any one language (usually Common)"
+      ],
+      "cr": "7",
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "The storm sorcerer is an 11th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 15}, {@hit 7} to hit with spell attacks). It has the following sorcerer spells prepared:"
+          ],
+          "spells": {
+            "0": {
+              "spells": [
+                "{@spell mage hand}",
+                "{@spell fire bolt}",
+                "{@spell light}",
+                "{@spell shocking grasp}"
+              ]
+            },
+            "1": {
+              "slots": 4,
+              "spells": [
+                "{@spell mage armor}",
+                "{@spell thunderwave}"
+              ]
+            },
+            "2": {
+              "slots": 3,
+              "spells": [
+                "{@spell gust of wind}",
+                "{@spell misty step}",
+                "{@spell shatter}"
+              ]
+            },
+            "3": {
+              "slots": 3,
+              "spells": [
+                "{@spell lightning bolt}",
+                "{@spell tidal wave|XGE}"
+              ]
+            },
+            "4": {
+              "slots": 3,
+              "spells": [
+                "{@spell ice storm}",
+                "{@spell storm sphere|XGE}"
+              ]
+            },
+            "5": {
+              "slots": 2,
+              "spells": [
+                "{@spell control winds|XGE}",
+                "{@spell synaptic static|XGE}"
+              ]
+            },
+            "6": {
+              "slots": 1,
+              "spells": [
+                "{@spell chain lightning}"
+              ]
+            }
+          },
+          "ability": "cha"
+        }
+      ],
+      "trait": [
+        {
+          "name": "Heart of the Storm",
+          "entries": [
+            "Whenever the storm sorcerer casts a spell other than a cantrip that deals lightning or thunder damage, a stormy aura surrounds it. In addition to the spell's effects, creatures of its choice within 10 feet of it take 5 lightning or thunder damage (storm sorcerer' choice)."
+          ]
+        },
+        {
+          "name": "Sorcery Points",
+          "entries": [
+            "The storm sorcerer has 11 sorcery points. It can spend 1 or more sorcery points as a bonus action to gain one of the following benefits:",
+            {
+              "type": "list",
+              "style": "list-hang-notitle",
+              "items": [
+                {
+                  "type": "itemSub",
+                  "name": "Heightened Spell:",
+                  "entry": "When the storm sorcerer casts a spell that forces a creature to make a saving throw to resist the spell's effects, it can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw against the spell."
+                },
+                {
+                  "type": "itemSub",
+                  "name": "Quickened Spell:",
+                  "entry": "When the storm sorcerer casts a spell that has a casting time of 1 action, it can spend 2 sorcery points to change the casting time to 1 bonus action for this casting."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Spear",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage, or 6 ({@damage 1d8 + 2}) piercing damage if used with two hands to make a melee attack."
+          ]
+        }
+      ],
+      "languageTags": [
+        "C",
+        "X"
+      ],
+      "damageTags": [
+        "P",
+        "L",
+        "T"
+      ],
+      "spellcastingTags": [
+        "CS"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/token/stormsorcerer.png",
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/stormsorcerer.webp"
+            }
+          },
+          {
+            "type": "image",
+            "href": {
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/mme_v2/img/001-7634.webp",
+              "type": "external"
+            }
+          }
+        ]
+      },
+      "page": 0,
+      "damageTagsSpell": [
+        "B",
+        "C",
+        "F",
+        "L",
+        "T",
+        "Y"
+      ],
+      "altArt": [
+        {
+          "source": "MME_v2",
+          "tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/mme_v2/token/Storm Sorcerer Token.webp",
+          "name": "v2 art"
+        }
+      ],
+      "attachedItems": [
+        "spear|phb"
+      ]
+    },
+    {
+      "name": "Storm Priest",
+      "source": "monsters4",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "any race"
+        ]
+      },
+      "alignment": [
+        "C",
+        "G",
+        "NY",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 15,
+          "from": [
+            "{@item breastplate|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 59,
+        "formula": "9d8 + 18"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 14,
+      "dex": 12,
+      "con": 14,
+      "int": 10,
+      "wis": 17,
+      "cha": 10,
+      "save": {
+        "con": "+4",
+        "wis": "+5",
+        "cha": "+2"
+      },
+      "skill": {
+        "perception": "+5",
+        "religion": "+5",
+        "survival": "+5"
+      },
+      "passive": 16,
+      "languages": [
+        "any one language (usually Common)"
+      ],
+      "cr": "4",
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "The storm priest is a 9th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It has the following cleric spells prepared:"
+          ],
+          "spells": {
+            "0": {
+              "spells": [
+                "{@spell mending}",
+                "{@spell resistance}",
+                "{@spell toll the dead|XGE}",
+                "{@spell thaumaturgy}"
+              ]
+            },
+            "1": {
+              "slots": 4,
+              "spells": [
+                "{@spell fog cloud}",
+                "{@spell inflict wounds}",
+                "{@spell thunderwave}"
+              ]
+            },
+            "2": {
+              "slots": 3,
+              "spells": [
+                "{@spell gust of wind}",
+                "{@spell hold person}",
+                "{@spell shatter}"
+              ]
+            },
+            "3": {
+              "slots": 3,
+              "spells": [
+                "{@spell bestow curse}",
+                "{@spell call lightning}",
+                "{@spell sleet storm}"
+              ]
+            },
+            "4": {
+              "slots": 3,
+              "spells": [
+                "{@spell banishment}",
+                "{@spell control water}",
+                "{@spell ice storm}"
+              ]
+            },
+            "5": {
+              "slots": 1,
+              "spells": [
+                "{@spell control winds|XGE}",
+                "{@spell destructive wave}",
+                "{@spell insect plague}"
+              ]
+            }
+          },
+          "ability": "wis"
+        }
+      ],
+      "action": [
+        {
+          "name": "Spear",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage, or 6 ({@damage 1d8 + 2}) piercing damage if used with two hands to make a melee attack, plus 4 ({@damage 1d8}) thunder damage."
+          ]
+        }
+      ],
+      "reaction": [
+        {
+          "name": "Wrath of the Storm (3/day)",
+          "entries": [
+            "When a creature within 5 feet of the storm priest hits the storm priest with an attack, and the storm priest can see the creature, the storm priest can magically force the creature to make a {@dc 14} Dexterity saving throw. The creature takes 9 ({@damage 2d8}) lightning or thunder damage on a failed saving throw, and half as much damage on a successful one."
+          ]
+        }
+      ],
+      "languageTags": [
+        "C",
+        "X"
+      ],
+      "damageTags": [
+        "P",
+        "T",
+        "L"
+      ],
+      "spellcastingTags": [
+        "CC"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/token/stormpriest.png",
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/stormpriest.webp"
+            }
+          }
+        ]
+      },
+      "page": 0,
+      "damageTagsSpell": [
+        "B",
+        "C",
+        "L",
+        "N",
+        "P",
+        "R",
+        "T"
+      ],
+      "attachedItems": [
+        "spear|phb"
+      ]
+    },
+    {
+      "name": "Skirmisher Elite",
+      "source": "monsters4",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "any race"
+        ]
+      },
+      "alignment": [
+        "A"
+      ],
+      "ac": [
+        {
+          "ac": 15,
+          "from": [
+            "{@item studded leather armor|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 65,
+        "formula": "10d8 + 20"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 10,
+      "dex": 18,
+      "con": 14,
+      "int": 10,
+      "wis": 12,
+      "cha": 10,
+      "skill": {
+        "perception": "+3",
+        "stealth": "+6"
+      },
+      "passive": 13,
+      "languages": [
+        "any one language (usually Common)"
+      ],
+      "cr": "4",
+      "trait": [
+        {
+          "name": "Lightfooted",
+          "entries": [
+            "The skirmisher can take the {@action Dash} or {@action Disengage} action as a bonus action on each of its turns."
+          ]
+        },
+        {
+          "name": "Skirmish Advantage",
+          "entries": [
+            "The skirmisher gains advantage on its first attack roll this turn if it has moved at least 15 feet from its space at the beginning of its turn."
+          ]
+        },
+        {
+          "name": "Sneak Attack (1/Turn)",
+          "entries": [
+            "The skirmisher deals an extra 10 ({@dice 3d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the skirmisher that isn't {@condition incapacitated} and the skirmisher doesn't have disadvantage on the attack roll."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The skald makes two melee attacks or two ranged attacks."
+          ]
+        },
+        {
+          "name": "Shortsword",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+          ]
+        },
+        {
+          "name": "Longbow",
+          "entries": [
+            "{@atk rw} {@hit 6} to hit, range 150/600 ft., one creature. {@h}8 ({@damage 1d8 + 4}) piercing damage."
+          ]
+        }
+      ],
+      "reaction": [
+        {
+          "name": "Skirmisher",
+          "entries": [
+            "When an enemy the skirmisher can see ends its turn within 5 feet of it, the skirmisher can move up to half its speed. This movement doesn't provoke {@action opportunity attack|phb|opportunity attacks}."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Sneak Attack"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "languageTags": [
+        "C",
+        "X"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MW",
+        "RW",
+        "RNG"
+      ],
+      "tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/token/skirmisherelite.png",
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/skirmisher.webp"
+            }
+          },
+          {
+            "type": "image",
+            "href": {
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/mme_v2/img/0158.webp",
+              "type": "external"
+            }
+          }
+        ]
+      },
+      "page": 0,
+      "altArt": [
+        {
+          "source": "MME_v2",
+          "tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/mme_v2/token/Skirmisher Elite Token.webp",
+          "name": "v2 art"
+        }
+      ],
+      "attachedItems": [
+        "longbow|phb",
+        "shortsword|phb"
+      ]
+    }
+  ]
+}
