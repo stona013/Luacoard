@@ -1,0 +1,507 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Luasgrimora5",
+				"abbreviation": "LUAG",
+				"full": "Luas Monsters and Creature",
+				"url": "https://github.com/TheGiddyLimit/homebrew",
+				"authors": [
+					"Krzysztof"
+				],
+				"convertedBy": [
+					"Krzysztof"
+				],
+				"version": "unknown"
+			}
+		],
+		"dateAdded": 1656791472,
+		"dateLastModified": 1666126587,
+		"_dateLastModifiedHash": "3f768fb290"
+	},
+	"monster": [
+		{
+			"name": "Vorak the Ravager",
+			"source": "Luasgrimora5",
+			"size": ["L"],
+			"type": "Fiend",
+			"alignment": ["CE"],
+			"ac": [
+			  {
+				"ac": 18
+			  }
+			],
+			"hp": {
+			  "average": 105,
+			  "formula": "14d10 + 28"
+			},
+			"speed": {
+			  "walk": 30,
+			  "fly": 60
+			},
+			"str": 18,
+			"dex": 16,
+			"con": 14,
+			"int": 12,
+			"wis": 10,
+			"cha": 20,
+			"save": {
+			  "dex": "+7",
+			  "con": "+5",
+			  "cha": "+9"
+			},
+			"skill": {
+			  "perception": "+4",
+			  "intimidation": "+9"
+			},
+			"senses": [
+			  "darkvision 120 ft.",
+			  "passive Perception 14"
+			],
+			"languages": [
+			  "Abyssal",
+			  "Common",
+			  "Infernal"
+			],
+			"cr": "7",
+			"trait": [
+			  {
+				"name": "Aura of Fear",
+				"entries": [
+				  "Any creature within 10 feet of Vorak that starts its turn there must succeed on a DC 15 Wisdom saving throw or become frightened until the start of its next turn."
+				]
+			  }
+			],
+			"action": [
+			  {
+				"name": "Multiattack",
+				"entries": [
+				  "Vorak makes two attacks: one with its longsword and one with its bite."
+				]
+			  },
+			  {
+				"name": "Longsword",
+				"entries": [
+				  "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d10 + 4}) slashing damage plus 7 ({@damage 2d6}) necrotic damage."
+				]
+			  },
+			  {
+				"name": "Bite",
+				"entries": [
+				  "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) piercing damage."
+				]
+			  }
+			],
+			"immune": ["fire"],
+			"resist": ["cold"],
+			"vulnerable": ["radiant"]
+		  },		  
+		  {
+			"name": "Zephyrath",
+			"source": "Luasgrimora5",
+			"size": ["H"],
+			"type": "Elemental",
+			"alignment": ["N"],
+			"ac": [
+			  {
+				"ac": 19
+			  }
+			],
+			"hp": {
+			  "average": 195,
+			  "formula": "17d12 + 85"
+			},
+			"speed": {
+			  "fly": {
+				"number": 80,
+				"condition": "(hover)"
+			  }
+			},
+			"str": 22,
+			"dex": 18,
+			"con": 20,
+			"int": 10,
+			"wis": 12,
+			"cha": 8,
+			"save": {
+			  "con": "+9",
+			  "dex": "+8"
+			},
+			"skill": {
+			  "perception": "+5"
+			},
+			"senses": [
+			  "darkvision 60 ft.",
+			  "passive Perception 15"
+			],
+			"languages": [
+			  "Auran",
+			  "Primordial"
+			],
+			"cr": "11",
+			"trait": [
+			  {
+				"name": "Whirlwind Form",
+				"entries": [
+				  "Zephyrath can move through a space as narrow as 1 inch wide without squeezing. A creature that enters Zephyrath's space for the first time on a turn or starts its turn there must succeed on a DC 17 Strength saving throw or take 11 (2d10) bludgeoning damage and be pushed up to 10 feet away from Zephyrath."
+				]
+			  }
+			],
+			"action": [
+			  {
+				"name": "Multiattack",
+				"entries": [
+				  "Zephyrath makes two slam attacks."
+				]
+			  },
+			  {
+				"name": "Slam",
+				"entries": [
+				  "{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}18 ({@damage 3d8 + 6}) bludgeoning damage."
+				]
+			  }
+			],
+			"immune": [
+			  "poison",
+			  "thunder",
+			  "bludgeoning",
+			  "piercing",
+			  "slashing",
+			  "exhaustion",
+			  "grappled",
+			  "paralyzed",
+			  "petrified",
+			  "prone",
+			  "restrained",
+			  "unconscious"
+			],
+			"resist": [
+			  "acid",
+			  "cold",
+			  "fire",
+			  "lightning",
+			  "necrotic",
+			  "radiant"
+			]
+		  },
+		  {
+			"name": "Maelstrom",
+			"source": "Luasgrimora5",
+			"size": ["G"],
+			"type": "Aberration",
+			"alignment": ["CN"],
+			"ac": [
+			  {
+				"ac": 17
+			  }
+			],
+			"hp": {
+			  "average": 231,
+			  "formula": "14d20 + 112"
+			},
+			"speed": {
+			  "swim": 60
+			},
+			"str": 24,
+			"dex": 14,
+			"con": 26,
+			"int": 10,
+			"wis": 16,
+			"cha": 18,
+			"save": {
+			  "con": "+13",
+			  "wis": "+8"
+			},
+			"skill": {
+			  "perception": "+12",
+			  "insight": "+9"
+			},
+			"senses": [
+			  "darkvision 120 ft.",
+			  "passive Perception 22"
+			],
+			"languages": [
+			  "Deep Speech",
+			  "Aquan"
+			],
+			"cr": "13",
+			"trait": [
+			  {
+				"name": "Maelstrom's Fury",
+				"entries": [
+				  "When Maelstrom takes damage, it can use its reaction to make one slam attack against a creature within 10 feet of it."
+				]
+			  }
+			],
+			"action": [
+			  {
+				"name": "Multiattack",
+				"entries": [
+				  "Maelstrom makes two slam attacks."
+				]
+			  },
+			  {
+				"name": "Slam",
+				"entries": [
+				  "{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}24 ({@damage 3d10 + 8}) bludgeoning damage."
+				]
+			  }
+			],
+			"immune": ["frightened", "grappled"],
+			"resist": ["force"],
+			"vulnerable": ["psychic"]
+		  },
+		  {
+			"name": "Lysandra the Arcane",
+			"source": "Luasgrimora5",
+			"size": ["M"],
+			"type": "Humanoid",
+			"alignment": ["LN"],
+			"ac": [
+			  {
+				"ac": 17
+			  }
+			],
+			"hp": {
+			  "average": 123,
+			  "formula": "18d8 + 36"
+			},
+			"speed": {
+			  "walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 14,
+			"int": 20,
+			"wis": 16,
+			"cha": 12,
+			"save": {
+			  "int": "+10",
+			  "wis": "+7"
+			},
+			"skill": {
+			  "arcana": "+13",
+			  "perception": "+7"
+			},
+			"senses": [
+			  "passive Perception 17"
+			],
+			"languages": [
+			  "Common",
+			  "Elvish",
+			  "Draconic"
+			],
+			"cr": "10",
+			"trait": [
+			  {
+				"name": "Arcane Mastery",
+				"entries": [
+				  "Lysandra's spells and spell-like abilities are considered to be of 8th level when determining their effects."
+				]
+			  }
+			],
+			"action": [
+			  {
+				"name": "Multiattack",
+				"entries": [
+				  "Lysandra casts two spells."
+				]
+			  }
+			],
+			"spells": {
+			  "0": {
+				"spells": [
+				  "mage hand",
+				  "prestidigitation",
+				  "ray of frost"
+				],
+				"slots": {
+				  "used": 0,
+				  "total": 4
+				}
+			  },
+			  "1": {
+				"spells": [
+				  "magic missile",
+				  "shield"
+				],
+				"slots": {
+				  "used": 0,
+				  "total": 4
+				}
+			  },
+			  "2": {
+				"spells": [
+				  "mirror image",
+				  "misty step"
+				],
+				"slots": {
+				  "used": 0,
+				  "total": 3
+				}
+			  },
+			  "3": {
+				"spells": [
+				  "counterspell",
+				  "fireball"
+				],
+				"slots": {
+				  "used": 0,
+				  "total": 3
+				}
+			  },
+			  "4": {
+				"spells": [
+				  "greater invisibility",
+				  "dimension door"
+				],
+				"slots": {
+				  "used": 0,
+				  "total": 3
+				}
+			  },
+			  "5": {
+				"spells": [
+				  "dominate person",
+				  "cone of cold"
+				],
+				"slots": {
+				  "used": 0,
+				  "total": 2
+				}
+			  },
+			  "6": {
+				"spells": [
+				  "chain lightning",
+				  "disintegrate"
+				],
+				"slots": {
+				  "used": 0,
+				  "total": 1
+				}
+			  },
+			  "7": {
+				"spells": [
+				  "teleport",
+				  "finger of death"
+				],
+				"slots": {
+				  "used": 0,
+				  "total": 1
+				}
+			  },
+			  "8": {
+				"spells": [
+				  "mind blank",
+				  "power word stun"
+				],
+				"slots": {
+				  "used": 0,
+				  "total": 1
+				}
+			  },
+			  "9": {
+				"spells": [
+				  "wish"
+				],
+				"slots": {
+				  "used": 0,
+				  "total": 1
+				}
+			  }
+			}
+		  },{
+			"name": "Mordak the Deathbringer",
+			"source": "Luasgrimora5",
+			"size": ["M"],
+			"type": "Undead",
+			"alignment": ["NE"],
+			"ac": [
+			  {
+				"ac": 18
+			  }
+			],
+			"hp": {
+			  "average": 208,
+			  "formula": "16d12 + 96"
+			},
+			"speed": {
+			  "walk": 30
+			},
+			"str": 22,
+			"dex": 16,
+			"con": 22,
+			"int": 14,
+			"wis": 18,
+			"cha": 18,
+			"save": {
+			  "con": "+11",
+			  "wis": "+9",
+			  "cha": "+9"
+			},
+			"skill": {
+			  "perception": "+9",
+			  "intimidation": "+9"
+			},
+			"senses": [
+			  "darkvision 120 ft.",
+			  "passive Perception 19"
+			],
+			"languages": [
+			  "Common"
+			],
+			"cr": "12",
+			"trait": [
+			  {
+				"name": "Dreadful Aura",
+				"entries": [
+				  "Any creature that starts its turn within 10 feet of Mordak must succeed on a DC 17 Wisdom saving throw or become frightened until the start of its next turn."
+				]
+			  }
+			],
+			"action": [
+			  {
+				"name": "Multiattack",
+				"entries": [
+				  "Mordak makes two attacks: one with its longsword and one with its life drain."
+				]
+			  },
+			  {
+				"name": "Longsword",
+				"entries": [
+				  "{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d10 + 6}) slashing damage plus 7 ({@damage 2d6}) necrotic damage."
+				]
+			  },
+			  {
+				"name": "Life Drain",
+				"entries": [
+				  "{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}21 ({@damage 3d10 + 6}) necrotic damage. The target must succeed on a DC 17 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest."
+				]
+			  }
+			],
+			"immune": [
+			  "poison",
+			  "exhaustion",
+			  "frightened",
+			  "grappled",
+			  "paralyzed",
+			  "petrified",
+			  "poisoned",
+			  "prone",
+			  "restrained",
+			  "unconscious"
+			],
+			"resist": [
+			  "cold",
+			  "necrotic"
+			],
+			"vulnerable": [
+			  "radiant"
+			]
+		  }
+		  
+		  
+		  
+		  
+	]
+}
