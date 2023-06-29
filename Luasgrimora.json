@@ -20,166 +20,77 @@
 		"_dateLastModifiedHash": "3f768fb290"
 	},
 	"monster": [
+    {
+      "name": "Grimmjaw",
+      "source": "Luasgrimora",
+      "size": ["L"],
+      "type": "Monstrosity",
+      "alignment": ["N"],
+      "ac": [
         {
-            "name": "Gluttonous Devourer",
-            "source": "Luasgrimora",
-            "size": ["H"],
-            "type": "Aberration",
-            "alignment": ["LE"],
-            "ac": [
-              {
-                "ac": 18
-              }
-            ],
-            "hp": {
-              "average": 210,
-              "formula": "20d12 + 80"
-            },
-            "speed": {
-              "walk": 30,
-              "swim": 40
-            },
-            "str": 22,
-            "dex": 10,
-            "con": 18,
-            "int": 14,
-            "wis": 16,
-            "cha": 20,
-            "save": {
-              "con": "+9",
-              "wis": "+7"
-            },
-            "skill": {
-              "perception": "+10"
-            },
-            "senses": [
-              "darkvision 120 ft.",
-              "passive Perception 20"
-            ],
-            "languages": [
-              "Deep Speech",
-              "Abyssal",
-              "Undercommon"
-            ],
-            "cr": "13",
-            "trait": [
-              {
-                "name": "Devour",
-                "entries": [
-                  "The Gluttonous Devourer can attempt to swallow a Large or smaller creature within 10 feet of it. The target must make a DC 17 Dexterity saving throw. On a failed save, the creature is swallowed and restrained, taking 42 (6d10 + 9) acid damage at the start of each of the Devourer's turns. The Devourer can have only one creature swallowed at a time. If the Devourer takes 30 damage or more on a single turn from a creature inside it, it must succeed on a DC 15 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the Devourer. If the Devourer dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 15 feet of movement, exiting prone."
-                ]
-              },
-              {
-                "name": "Amphibious",
-                "entries": [
-                  "The Devourer can breathe air and water."
-                ]
-              },
-              {
-                "name": "Innate Spellcasting",
-                "entries": [
-                  "The Gluttonous Devourer's innate spellcasting ability is Charisma (spell save DC 17, +9 to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
-                ],
-                "ability": "cha"
-              }
-            ],
-            "action": [
-              {
-                "name": "Multiattack",
-                "entries": [
-                  "The Devourer makes two attacks: one with its bite and one with its tentacle slam."
-                ]
-              },
-              {
-                "name": "Bite",
-                "entries": [
-                  "{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}30 ({@damage 4d10 + 8}) piercing damage plus 14 ({@damage 4d6}) acid damage."
-                ]
-              },
-              {
-                "name": "Tentacle Slam",
-                "entries": [
-                  "{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}24 ({@damage 3d8 + 8}) bludgeoning damage."
-                ]
-              }
-            ],
-            "spellcasting": [
-              {
-                "name": "Spellcasting",
-                "headerEntries": [
-                  "The Gluttonous Devourer is an 11th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 17, +9 to hit with spell attacks). It has the following sorcerer spells prepared:"
-                ],
-                "spells": {
-                  "0": {
-                    "spells": [
-                      "{@spell mage hand}",
-                      "{@spell fire bolt}",
-                      "{@spell light}",
-                      "{@spell shocking grasp}"
-                    ]
-                  },
-                  "1": {
-                    "slots": 4,
-                    "spells": [
-                      "{@spell mage armor}",
-                      "{@spell thunderwave}"
-                    ]
-                  },
-                  "2": {
-                    "slots": 3,
-                    "spells": [
-                      "{@spell gust of wind}",
-                      "{@spell misty step}",
-                      "{@spell shatter}"
-                    ]
-                  },
-                  "3": {
-                    "slots": 3,
-                    "spells": [
-                      "{@spell lightning bolt}",
-                      "{@spell tidal wave|XGE}"
-                    ]
-                  },
-                  "4": {
-                    "slots": 3,
-                    "spells": [
-                      "{@spell ice storm}",
-                      "{@spell storm sphere|XGE}"
-                    ]
-                  },
-                  "5": {
-                    "slots": 2,
-                    "spells": [
-                      "{@spell control winds|XGE}",
-                      "{@spell synaptic static|XGE}"
-                    ]
-                  },
-                  "6": {
-                    "slots": 1,
-                    "spells": [
-                      "{@spell chain lightning}"
-                    ]
-                  }
-                },
-                "ability": "cha"
-              }
-            ],
-            "immune": [
-              "acid",
-              "poison"
-            ],
-            "conditionImmune": [
-              "charmed",
-              "exhaustion",
-              "frightened",
-              "grappled",
-              "paralyzed",
-              "petrified",
-              "poisoned",
-              "prone",
-              "restrained"
-            ]
-          }
-                    
+          "ac": 15
+        }
+      ],
+      "hp": {
+        "average": 153,
+        "formula": "18d10 + 54"
+      },
+      "speed": {
+        "walk": 40,
+        "swim": 30
+      },
+      "str": 18,
+      "dex": 12,
+      "con": 16,
+      "int": 6,
+      "wis": 10,
+      "cha": 8,
+      "save": {
+        "dex": "+4",
+        "con": "+6"
+      },
+      "skill": {
+        "perception": "+5"
+      },
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 15"
+      ],
+      "languages": [
+        "Understands Common and Abyssal"
+      ],
+      "cr": "10",
+      "trait": [
+        {
+          "name": "Rampage",
+          "entries": [
+            "When Grimmjaw reduces a creature to 0 hit points with a melee attack on its turn, it can take a bonus action to move up to half its speed and make a bite attack."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Grimmjaw makes three attacks: one with its bite and two with its claws."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d10 + 4}) piercing damage."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}12 ({@damage 2d6 + 4}) slashing damage."
+          ]
+        }
+      ],
+      "immune": ["poison"],
+      "resist": ["fire"],
+      "vulnerable": ["cold"]
+    }               
         ]
 }
