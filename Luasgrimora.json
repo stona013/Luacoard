@@ -20,102 +20,138 @@
 		"_dateLastModifiedHash": "3f768fb290"
 	},
 	"monster": [
-	
-          {
-            "name": "Vexlar the Arcanist",
-            "source": "Luasgrimora",
-            "size": ["L"],
-            "type": "Fiend",
-            "alignment": ["CE"],
+        {
+            "name": "Gluttonous Devourer",
+            "source": "Luasgrimora5",
+            "size": ["H"],
+            "type": "Aberration",
+            "alignment": ["LE"],
             "ac": [
               {
                 "ac": 18
               }
             ],
             "hp": {
-              "average": 135,
-              "formula": "18d10 + 36"
+              "average": 210,
+              "formula": "20d12 + 80"
             },
             "speed": {
-              "walk": 30
+              "walk": 30,
+              "swim": 40
             },
-            "str": 14,
-            "dex": 16,
-            "con": 14,
-            "int": 20,
-            "wis": 12,
-            "cha": 18,
+            "str": 22,
+            "dex": 10,
+            "con": 18,
+            "int": 14,
+            "wis": 16,
+            "cha": 20,
             "save": {
-              "dex": "+6",
-              "con": "+5",
-              "int": "+9",
-              "wis": "+4",
-              "cha": "+7"
+              "con": "+9",
+              "wis": "+7"
             },
             "skill": {
-              "arcana": "+9",
-              "perception": "+6"
+              "perception": "+10"
             },
             "senses": [
               "darkvision 120 ft.",
-              "passive Perception 16"
+              "passive Perception 20"
             ],
             "languages": [
+              "Deep Speech",
               "Abyssal",
-              "Common",
-              "Infernal"
+              "Undercommon"
             ],
-            "cr": "10",
+            "cr": "13",
+            "trait": [
+              {
+                "name": "Devour",
+                "entries": [
+                  "The Gluttonous Devourer can attempt to swallow a Large or smaller creature within 10 feet of it. The target must make a DC 17 Dexterity saving throw. On a failed save, the creature is swallowed and restrained, taking 42 (6d10 + 9) acid damage at the start of each of the Devourer's turns. The Devourer can have only one creature swallowed at a time. If the Devourer takes 30 damage or more on a single turn from a creature inside it, it must succeed on a DC 15 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the Devourer. If the Devourer dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 15 feet of movement, exiting prone."
+                ]
+              },
+              {
+                "name": "Amphibious",
+                "entries": [
+                  "The Devourer can breathe air and water."
+                ]
+              },
+              {
+                "name": "Innate Spellcasting",
+                "entries": [
+                  "The Gluttonous Devourer's innate spellcasting ability is Charisma (spell save DC 17, +9 to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+                ],
+                "ability": "cha"
+              }
+            ],
+            "action": [
+              {
+                "name": "Multiattack",
+                "entries": [
+                  "The Devourer makes two attacks: one with its bite and one with its tentacle slam."
+                ]
+              },
+              {
+                "name": "Bite",
+                "entries": [
+                  "{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}30 ({@damage 4d10 + 8}) piercing damage plus 14 ({@damage 4d6}) acid damage."
+                ]
+              },
+              {
+                "name": "Tentacle Slam",
+                "entries": [
+                  "{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}24 ({@damage 3d8 + 8}) bludgeoning damage."
+                ]
+              }
+            ],
             "spellcasting": [
               {
                 "name": "Spellcasting",
                 "headerEntries": [
-                  "Vexlar is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 17}, {@hit 9} to hit with spell attacks). Vexlar has the following wizard spells prepared:"
+                  "The Gluttonous Devourer is an 11th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 17, +9 to hit with spell attacks). It has the following sorcerer spells prepared:"
                 ],
                 "spells": {
                   "0": {
                     "spells": [
                       "{@spell mage hand}",
-                      "{@spell prestidigitation}",
-                      "{@spell ray of frost}"
+                      "{@spell fire bolt}",
+                      "{@spell light}",
+                      "{@spell shocking grasp}"
                     ]
                   },
                   "1": {
                     "slots": 4,
                     "spells": [
-                      "{@spell magic missile}",
-                      "{@spell shield}",
+                      "{@spell mage armor}",
                       "{@spell thunderwave}"
                     ]
                   },
                   "2": {
                     "slots": 3,
                     "spells": [
-                      "{@spell invisibility}",
-                      "{@spell mirror image}",
-                      "{@spell misty step}"
+                      "{@spell gust of wind}",
+                      "{@spell misty step}",
+                      "{@spell shatter}"
                     ]
                   },
                   "3": {
                     "slots": 3,
                     "spells": [
-                      "{@spell counterspell}",
-                      "{@spell fireball}",
-                      "{@spell fly}"
+                      "{@spell lightning bolt}",
+                      "{@spell tidal wave|XGE}"
                     ]
                   },
                   "4": {
                     "slots": 3,
                     "spells": [
                       "{@spell ice storm}",
-                      "{@spell greater invisibility}"
+                      "{@spell storm sphere|XGE}"
                     ]
                   },
                   "5": {
                     "slots": 2,
                     "spells": [
-                      "{@spell cone of cold}",
-                      "{@spell teleport}"
+                      "{@spell control winds|XGE}",
+                      "{@spell synaptic static|XGE}"
                     ]
                   },
                   "6": {
@@ -123,88 +159,27 @@
                     "spells": [
                       "{@spell chain lightning}"
                     ]
-                  },
-                  "7": {
-                    "slots": 1,
-                    "spells": [
-                      "{@spell prismatic spray}"
-                    ]
-                  },
-                  "8": {
-                    "slots": 1,
-                    "spells": [
-                      "{@spell power word stun}"
-                    ]
                   }
                 },
-                "ability": "int"
+                "ability": "cha"
               }
             ],
-            "trait": [
-              {
-                "name": "Spellcasting Focus",
-                "entries": [
-                  "Vexlar's spellcasting focus is a staff."
-                ]
-              }
+            "immune": [
+              "acid",
+              "poison"
             ],
-            "action": [
-              {
-                "name": "Multiattack",
-                "entries": [
-                  "Vexlar makes two spell attacks."
-                ]
-              },
-              {
-                "name": "Spell Attack",
-                "entries": [
-                  "{@atk spell} {@hit 9} to hit, range 120 ft., one target. {@h}13 ({@damage 3d8}) + 5 damage."
-                ]
-              }
-            ],
-            "legendary": [
-              {
-                "name": "Legendary Resistance",
-                "entries": [
-                  "Vexlar can choose to succeed on a failed saving throw, but only three times per day."
-                ]
-              },
-              {
-                "name": "Spellcasting",
-                "entries": [
-                  "Vexlar can cast one spell from its spell list as a legendary action, using only the spell slot of the same level or lower. Vexlar can't cast the same spell two rounds in a row."
-                ]
-              },
-              {
-                "name": "Arcane Recovery (1/Day)",
-                "entries": [
-                  "Vexlar regains 5d6 + 10 expended spell slots."
-                ]
-              }
-            ],
-            "lairActions": [
-              "On initiative count 20 (losing initiative ties), Vexlar takes a lair action to cause one of the following effects. Vexlar can't use the same effect two rounds in a row:",
-              {
-                "type": "list",
-                "items": [
-                  "Vexlar creates an area of magical darkness that extends 60 feet in radius, centered on a point within 120 feet of it. The darkness lasts until initiative count 20 on the following round.",
-                  "Vexlar conjures an illusory wall or obstacle within 120 feet of it. The wall or obstacle remains for 1 minute or until Vexlar uses this lair action again.",
-                  "Vexlar summons a shadowy servant from the Shadowfell. The servant acts as an ally of Vexlar and obeys its commands. The servant remains for 1 minute or until Vexlar uses this lair action again."
-                ]
-              }
-            ],
-            "regionalEffects": [
-              "The region containing Vexlar's lair is warped by its magic, which creates one or more of the following effects:",
-              {
-                "type": "list",
-                "items": [
-                  "Casting a spell within 1 mile of Vexlar's lair requires a spellcasting ability check. On a failure, the spell is lost and has no effect, but the spell slot is still expended.",
-                  "The area within 1 mile of Vexlar's lair is filled with an eerie silence, preventing any sound from traveling more than 30 feet. This effect lasts until Vexlar is defeated.",
-                  "Vexlar can communicate telepathically with any creature within 1 mile of its lair that understands a language."
-                ]
-              }
+            "conditionImmune": [
+              "charmed",
+              "exhaustion",
+              "frightened",
+              "grappled",
+              "paralyzed",
+              "petrified",
+              "poisoned",
+              "prone",
+              "restrained"
             ]
           }
-          
+                    
         ]
 }
