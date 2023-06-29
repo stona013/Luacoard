@@ -22,7 +22,7 @@
 	"monster": [
         {
             "name": "Gluttonous Devourer",
-            "source": "Luasgrimora5",
+            "source": "Luasgrimora",
             "size": ["H"],
             "type": "Aberration",
             "alignment": ["LE"],
