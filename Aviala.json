@@ -128,8 +128,121 @@
 				"mature": 15,
 				"max": 80
 			}
-		}
+		},
+			{
+			"name": "Nox",
+			"source": "Nox",
+			"page": 0,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 1,
+						"amount": 2
+					}
+				},
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 1,
+						"amount": 1
+					}
+				}
+			],
+			"size": [
+				"M"
+			],
+			"creatureTypes": [
+				"humanoid"
+		
+			],
+			"speed": 30,
+			"darkvision": 120,
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"undercommon": true
+				}
+			],
+			"skillProficiencies": [
+				{
+				"Perception ": true
+				}
+			],
 
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"You mature at the same rate as humans, but they're considered young until they reach the age of 25. On average, they live about 500 years."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Alignment",
+					"entries": [
+						"Most Nox are cool and logical. They always try to gain an advantage with their behavior. Most Nox are Lawful neutral, there are quite a few individuals who tend towards Evil alignment."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Die Größe eines ausgewachsenen Nox pendelt sich meist um die zwei Meter Marke ein. Kleinere Exemplare sind bekannt, jedoch unüblich."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 120 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Tinkers of the Underground",
+					"entries": [
+						"You can choose one Tool Proficiency ."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Keen Hearing",
+					"entries": [
+						"You are Proficient in Perception checks."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Psyonic Adaptation",
+					"entries": [
+						"You gain resistance to Psychic Damage."
+					]
+				}
+			],
+			"age": {
+				"mature": 25,
+				"max": 500 
+			}
+		}
 
 
 	],

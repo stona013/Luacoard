@@ -1,54 +1,57 @@
 {
-	"_meta": {
-		"sources": [
-			{
-				"json": "Luasgrimora",
-				"abbreviation": "LUAG",
-				"full": "Luas Monsters and Creature",
-				"url": "https://github.com/TheGiddyLimit/homebrew",
-				"authors": [
-					"Krzysztof"
-				],
-				"convertedBy": [
-					"Krzysztof"
-				],
-				"version": "unknown"
-			}
-		],
-		"dateAdded": 1656791472,
-		"dateLastModified": 1666126587,
-		"_dateLastModifiedHash": "3f768fb290"
-	},
-	"monster": [
+  "_meta": {
+    "sources": [
+      {
+        "json": "Luasgrimora",
+        "abbreviation": "LUAG",
+        "full": "Luas Monsters and Creature",
+        "url": "https://github.com/TheGiddyLimit/homebrew",
+        "authors": [
+          "Krzysztof"
+        ],
+        "convertedBy": [
+          "Krzysztof"
+        ],
+        "version": "unknown"
+      }
+    ],
+    "dateAdded": 1656791472,
+    "dateLastModified": 1666126587,
+    "_dateLastModifiedHash": "3f768fb290"
+  },
+  "monster": [
     {
-      "name": "Grimmjaw",
+      "name": "Raging Axolotl",
       "source": "Luasgrimora",
-      "size": ["L"],
-      "type": "Monstrosity",
-      "alignment": ["N"],
+      "size": [
+        "L"
+      ],
+      "type": "Beast",
+      "alignment": [
+        "CE"
+      ],
       "ac": [
         {
-          "ac": 15
+          "ac": 15,
+          "from": [
+            "natural armor"
+          ]
         }
       ],
       "hp": {
-        "average": 153,
-        "formula": "18d10 + 54"
+        "average": 142,
+        "formula": "15d10 + 60"
       },
       "speed": {
-        "walk": 40,
-        "swim": 30
+        "walk": 30,
+        "swim": 40
       },
       "str": 18,
-      "dex": 12,
-      "con": 16,
+      "dex": 14,
+      "con": 18,
       "int": 6,
-      "wis": 10,
-      "cha": 8,
-      "save": {
-        "dex": "+4",
-        "con": "+6"
-      },
+      "wis": 12,
+      "cha": 6,
       "skill": {
         "perception": "+5"
       },
@@ -57,14 +60,14 @@
         "passive Perception 15"
       ],
       "languages": [
-        "Understands Common and Abyssal"
+        "Understands Abyssal"
       ],
-      "cr": "10",
+      "cr": "8",
       "trait": [
         {
-          "name": "Rampage",
+          "name": "Brutal Rage",
           "entries": [
-            "When Grimmjaw reduces a creature to 0 hit points with a melee attack on its turn, it can take a bonus action to move up to half its speed and make a bite attack."
+            "The Raging Axolotl gains advantage on melee weapon attack rolls when it has half its maximum hit points or fewer."
           ]
         }
       ],
@@ -72,25 +75,123 @@
         {
           "name": "Multiattack",
           "entries": [
-            "Grimmjaw makes three attacks: one with its bite and two with its claws."
+            "The Raging Axolotl makes two attacks: one with its bite and one with its claw."
           ]
         },
         {
           "name": "Bite",
           "entries": [
-            "{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d10 + 4}) piercing damage."
+            "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 4) piercing damage."
           ]
         },
         {
           "name": "Claw",
           "entries": [
-            "{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}12 ({@damage 2d6 + 4}) slashing damage."
+            "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 16 (3d6 + 4) slashing damage."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Magdala the Enchanter",
+      "source": "Luasgrimora",
+      "size": [
+        "M"
+      ],
+      "type": "Humanoid",
+      "subtype": "Elf",
+      "alignment": [
+        "CN"
+      ],
+      "ac": [
+        {
+          "ac": 15,
+          "from": [
+            "mage armor"
           ]
         }
       ],
-      "immune": ["poison"],
-      "resist": ["fire"],
-      "vulnerable": ["cold"]
-    }               
-        ]
+      "hp": {
+        "average": 88,
+        "formula": "16d8 + 16"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 8,
+      "dex": 14,
+      "con": 12,
+      "int": 18,
+      "wis": 10,
+      "cha": 16,
+      "save": {
+        "int": "+7",
+        "wis": "+4"
+      },
+      "skill": {
+        "arcana": "+11",
+        "perception": "+4"
+      },
+      "senses": [
+        "passive Perception 14"
+      ],
+      "languages": [
+        "Common",
+        "Elvish",
+        "Draconic"
+      ],
+      "cr": "6",
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "Magdala is a 6th-level spellcaster. Her spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). Magdala has the following wizard spells prepared:"
+          ],
+          "spells": {
+            "0": {
+              "spells": [
+                "{@spell mage hand}",
+                "{@spell prestidigitation}",
+                "{@spell ray of frost}"
+              ]
+            },
+            "1": {
+              "slots": 4,
+              "spells": [
+                "{@spell charm person}",
+                "{@spell magic missile}",
+                "{@spell shield}",
+                "{@spell thunderwave}"
+              ]
+            },
+            "2": {
+              "slots": 3,
+              "spells": [
+                "{@spell invisibility}",
+                "{@spell mirror image}",
+                "{@spell misty step}"
+              ]
+            },
+            "3": {
+              "slots": 2,
+              "spells": [
+                "{@spell counterspell}",
+                "{@spell fireball}",
+                "{@spell fly}"
+              ]
+            }
+          },
+          "ability": "int"
+        }
+      ],
+      "action": [
+        {
+          "name": "Dagger",
+          "entries": [
+            "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+          ]
+        }
+      ]
+    }
+  ]
 }
