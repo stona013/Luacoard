@@ -192,6 +192,135 @@
           ]
         }
       ]
+    },
+    {
+  "name": "Malachi the Arcane Master",
+  "source": "Luasgrimora",
+  "size": ["M"],
+  "type": "Humanoid",
+  "subtype": "Elf",
+  "alignment": ["Unaligned"],
+  "ac": [
+    {
+      "ac": 15,
+      "from": ["mage armor"]
     }
+  ],
+  "hp": {
+    "average": 110,
+    "formula": "13d8 + 52"
+  },
+  "speed": {
+    "walk": 30
+  },
+  "str": 10,
+  "dex": 16,
+  "con": 14,
+  "int": 20,
+  "wis": 12,
+  "cha": 16,
+  "save": {
+    "int": "+9",
+    "wis": "+5"
+  },
+  "skill": {
+    "arcana": "+12",
+    "insight": "+5",
+    "perception": "+5"
+  },
+  "damageVulnerabilities": [],
+  "damageResistances": [],
+  "damageImmunities": [],
+  "conditionImmunities": [],
+  "senses": [
+    "darkvision 60 ft.",
+    "passive Perception 15"
+  ],
+  "languages": [
+    "Common",
+    "Elvish",
+    "Draconic"
+  ],
+  "cr": "10",
+  "trait": [
+    {
+      "name": "Arcane Recovery",
+      "entries": [
+        "Once per day, Malachi can regain expended spell slots totaling up to 9 levels. He must finish a short rest to use this feature."
+      ]
+    },
+    {
+      "name": "Spellcasting Mastery",
+      "entries": [
+        "Malachi's spell attack bonus is +9, and his spell save DC is 17."
+      ]
+    }
+  ],
+  "spellcasting": [
+    {
+      "name": "Spellcasting",
+      "headerEntries": [
+        "Malachi is a 13th-level spellcaster. His spellcasting ability is Intelligence."
+      ],
+      "spells": {
+        "0": {
+          "spells": [
+            "{@spell mage hand}",
+            "{@spell ray of frost}",
+            "{@spell prestidigitation}"
+          ]
+        },
+        "1": {
+          "slots": 4,
+          "spells": [
+            "{@spell magic missile}",
+            "{@spell shield}",
+            "{@spell identify}",
+            "{@spell mage armor}"
+          ]
+        },
+        "2": {
+          "slots": 3,
+          "spells": [
+            "{@spell mirror image}",
+            "{@spell misty step}",
+            "{@spell suggestion}"
+          ]
+        },
+        "3": {
+          "slots": 3,
+          "spells": [
+            "{@spell counterspell}",
+            "{@spell fireball}",
+            "{@spell lightning bolt}"
+          ]
+        },
+        "4": {
+          "slots": 3,
+          "spells": [
+            "{@spell ice storm}",
+            "{@spell stoneskin}",
+            "{@spell dimension door}"
+          ]
+        },
+        "5": {
+          "slots": 2,
+          "spells": [
+            "{@spell cone of cold}",
+            "{@spell dominate person}"
+          ]
+        },
+        "6": {
+          "slots": 1,
+          "spells": [
+            "{@spell chain lightning}"
+          ]
+        }
+      },
+      "ability": "int"
+    }
+  ]
+}
+
   ]
 }
