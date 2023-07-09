@@ -320,7 +320,86 @@
       "ability": "int"
     }
   ]
-}
+},
+    {
+  "name": "Malgorgon",
+  "source": "Luasgrimora",
+  "size": ["L"],
+  "type": "Fiend",
+  "alignment": ["CE"],
+  "ac": [
+    {
+      "ac": 16,
+      "from": ["natural armor"]
+    }
+  ],
+  "hp": {
+    "average": 120,
+    "formula": "16d10 + 32"
+  },
+  "speed": {
+    "walk": 40
+  },
+  "str": 18,
+  "dex": 14,
+  "con": 16,
+  "int": 8,
+  "wis": 12,
+  "cha": 10,
+  "save": {
+    "dex": "+5",
+    "con": "+6",
+    "wis": "+4"
+  },
+  "skill": {
+    "perception": "+4",
+    "stealth": "+5"
+  },
+  "damageResistances": ["fire"],
+  "senses": [
+    "darkvision 120 ft.",
+    "passive Perception 14"
+  ],
+  "languages": [
+    "Infernal"
+  ],
+  "cr": "7",
+  "trait": [
+    {
+      "name": "Fiendish Presence",
+      "entries": [
+        "Any creature within 30 feet of Malgorgon that can see it must succeed on a DC 14 Wisdom saving throw or become frightened for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+      ]
+    },
+    {
+      "name": "Bone Armor",
+      "entries": [
+        "Malgorgon has resistance to bludgeoning, piercing, and slashing damage from non-magical weapons."
+      ]
+    }
+  ],
+  "action": [
+    {
+      "name": "Multiattack",
+      "entries": [
+        "Malgorgon makes three attacks: one with its bite and two with its claws."
+      ]
+    },
+    {
+      "name": "Bite",
+      "entries": [
+        "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d10 + 4}) piercing damage."
+      ]
+    },
+    {
+      "name": "Claw",
+      "entries": [
+        "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+      ]
+    }
+  ],
+  }
+
 
   ]
 }
