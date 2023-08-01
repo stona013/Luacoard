@@ -274,7 +274,107 @@
       ]
     }
   ],
-  }
+  },
+      {
+  "name": "Psykoria",
+  "source": "Luasgrimora",
+  "size": ["T"],
+  "type": "Undead",
+  "alignment": ["NE"],
+  "ac": [
+    {
+      "ac": 16,
+      "from": ["natural armor"]
+    }
+  ],
+  "hp": {
+    "average": 105,
+    "formula": "14d4 + 42"
+  },
+  "speed": {
+    "walk": 20,
+    "swim": 40
+  },
+  "str": 8,
+  "dex": 20,
+  "con": 16,
+  "int": 12,
+  "wis": 16,
+  "cha": 10,
+  "skill": {
+    "stealth": "+8",
+    "perception": "+5"
+  },
+  "damageResistances": ["Necrotic"],
+  "damageImmunities": ["Poison"],
+  "conditionImmunities": ["Poisoned", "Exhaustion", "Frightened"],
+  "senses": [
+    "darkvision 60 ft.",
+    "passive Perception 15"
+  ],
+  "languages": [
+    "Understands Common but can't speak"
+  ],
+  "cr": "9",
+  "trait": [
+    {
+      "name": "Translucent Body",
+      "entries": [
+        "Psykoria has advantage on Dexterity (Stealth) checks when submerged in water or any translucent or semi-transparent material."
+      ]
+    },
+    {
+      "name": "Memory Engulf",
+      "entries": [
+        "As an action, Psykoria can force a creature within 20 feet to make a DC 16 Wisdom saving throw. On a failed save, the target is engulfed in a long happy memory from its past, losing its awareness of the surroundings. While trapped in the memory, the creature is incapacitated, charmed, and unaware of its surroundings. The creature can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+      ]
+    },
+    {
+      "name": "Total Memory Drain",
+      "entries": [
+        "When Psykoria successfully grapples a creature's head using its Tentacle Grapple, it starts to drain the target's memories. The creature must make a DC 16 Wisdom saving throw. On a failed save, the target loses all memories, including its identity, abilities, and personal history. The creature is considered incapacitated and unable to take any actions or understand its surroundings.",
+        "A creature affected by Total Memory Drain can only communicate through basic gestures and sounds and can't differentiate friend from foe. Greater Restoration, Wish, or similar powerful magic is required to restore the creature's memories fully."
+      ]
+    }
+  ],
+  "action": [
+    {
+      "name": "Tentacle Grapple",
+      "entries": [
+        "{@atk mw} {@hit 8} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d4 + 3}) bludgeoning damage. The target must succeed on a DC 15 Strength saving throw or be grappled (escape DC 15). While grappled, Psykoria can use its Total Memory Drain ability."
+      ]
+    },
+    {
+      "name": "Sting",
+      "entries": [
+        "{@atk mw} {@hit 8} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d4 + 3}) piercing damage plus 10 ({@damage 3d6}) necrotic damage. The target must succeed on a DC 15 Constitution saving throw or its hit point maximum is reduced by an amount equal to the necrotic damage taken. This reduction lasts until the creature finishes a long rest."
+      ]
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Ethereal Shift",
+      "entries": [
+        "As a bonus action, Psykoria can shift into the Ethereal Plane until the start of its next turn. While in the Ethereal Plane, it can move through other creatures and objects as if they were difficult terrain, but it takes 2d10 force damage if it ends its turn inside an object.",
+        "{@legendary 5-6|Recharge}"
+      ]
+    }
+  ],
+  "legendaryGroup": {
+    "name": "Legendary Actions",
+    "actions": [
+      {
+        "name": "Ethereal Shift",
+        "entries": [
+          "Psykoria shifts into the Ethereal Plane until the start of its next turn. While in the Ethereal Plane, it can move through other creatures and objects as if they were difficult terrain, but it takes 2d10 force damage if it ends its turn inside an object."
+        ]
+      }
+    ]
+  },
+  "environment": [],
+  "soundClip": ""
+}
+
 
 
   ]
