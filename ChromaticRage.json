@@ -1,0 +1,122 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "ChromaticRage",
+				"abbreviation": "CRBarbarian",
+				"full": "Path of the Chromatic Rage Barbarian",
+				"authors": [
+					"Krzyztof"
+				],
+				"version": "1.0",
+				"url": "https://docs.google.com/document/d/1btaCVn0f_qWQitC_EXU98NxN3QbXlvLabgeDhTPpgT4/edit",
+				"color": "92593d"
+			}
+		],
+		"dateAdded": 1702226750,
+		"dateLastModified": 1707891720,
+		"_dateLastModifiedHash": "7d5205565c"
+	},
+	"subclass": [
+		{
+			"name": "Path of Chromatic Rage",
+			"subclassFeatures": [
+				"Chromatic Fury|Barbarian||Chromatic Rage|ChromaticRage|3",
+				"Chromatic Energy|Barbarian||Chromatic Rage|ChromaticRage|3",
+				"Will of the Dragon|Barbarian||Chromatic Rage|ChromaticRage|6",
+				"Voice of the Dragon|Barbarian||Chromatic Rage|ChromaticRage|10",
+				"Heart of a Dragon|Barbarian||Chromatic Rage|ChromaticRage|14"
+			],
+			"source": "ChromaticRage",
+			"shortName": "Chromatic Rage",
+			"className": "Barbarian",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Path of Chromatic Rage",
+			"source": "ChromaticRage",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Chromatic Rage",
+			"subclassSource": "ChromaticRage",
+			"level": 3,
+			"entries": [
+				"Some Dragons inspire their followers to pitch themselves into a ferocious battle fury with Destruction. These barbarians are Dragon warriors who channel their rage into a powerful displays of Chromatic Energy. A variety of dragons in the worlds of Lua inspire their followers to take this path. Many dragons in Xendevaar are looking for followers which can prepare them for this path, so that they can become the strongest weapons for their plan. Even in the 4th level of hell, there are fiends and devils who make a pact with dragons to take this path.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Chromatic Fury|Barbarian||Chromatic Rage|ChromaticRage|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Chromatic Energy|Barbarian||Chromatic Rage|ChromaticRage|3"
+				}
+			]
+		},
+		{
+			"name": "Chromatic Fury",
+			"source": "ChromaticRage",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Chromatic Rage",
+			"subclassSource": "ChromaticRage",
+			"level": 3,
+			"entries": [
+				"Starting when you choose this path at 3rd level, you learn Draconic as one of your Languages and you can channel the Chromatic Energy from Dragons into your Fury. When you start raging, you can select a Scale Color from the Chromatic Chart. While raging, you have resistance to the Damage Type and the Scale color determines the Damage Type for the other features."
+			]
+		},
+		{
+			"name": "Chromatic Energy",
+			"source": "ChromaticRage",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Chromatic Rage",
+			"subclassSource": "ChromaticRage",
+			"level": 3,
+			"entries": [
+				"At 3rd level, your Body is fused with the Elemental Energy from a Dragon. While your Raging when a Creature attacks you with a melee attack within 5 feet they take Your Constitution Modifier as Damage of your scale type color. At level 10 they take your  Constitution Modifier *2 Damage."
+			]
+		},
+		{
+			"name": "Will of the Dragon",
+			"source": "ChromaticRage",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Chromatic Rage",
+			"subclassSource": "ChromaticRage",
+			"level": 6,
+			"entries": [
+				"At 6th level when you roll you gain a proficiency on Intimidation or Persuasion, also when you make a Intimidation or Persuasion check, you can add your Constitution Modifier to the roll."
+			]
+		},
+		{
+			"name": "Voice of the Dragon",
+			"source": "ChromaticRage",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Chromatic Rage",
+			"subclassSource": "ChromaticRage",
+			"level": 10,
+			"entries": [
+				"Starting at 10th level, you can use your Voice as an Instrument of Battle. You can use your bonus Action to let out a Roar of a Dragon. You can choose one of the following two roars:",
+				"- Frightful Roar: Each Creature within 30 ft of you needs to make a Wisdom saving throw or is frightful of you. they can repeat the Saving Throw at the End of their turn.",
+				"- Taunting Roar: Each Creature within 30 ft of you need to make a Wisdom Saving Throw or gets disadvantage on attack rolls against any other target then you. they can repeat the Saving Throw at the End of their turn.",
+				"- Furious Roar:  Each Creature in a 30 ft cone of you need to make a dexterity Saving Throw on a failed save they take 3d8 elemental damage, on a success half of it.",
+				"You can use this Feature a number of times equal to your Proficiency bonus and regain all charges after a long rest."
+			]
+		},
+		{
+			"name": "Heart of a Dragon",
+			"source": "ChromaticRage",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Chromatic Rage",
+			"subclassSource": "ChromaticRage",
+			"level": 14,
+			"entries": [
+				"At 14th level Your Body adapted to the hard training lived through. When entering a Rage you get a temporary Hitpoint equal 2 times your Level, also you gain a Immunity to the Damage Type of your Scale color and a 30ft blindsight. When you use this Feature you can't use it until your next short rest."
+			]
+		}
+	]
+}
